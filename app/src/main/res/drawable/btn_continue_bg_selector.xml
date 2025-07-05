@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Trạng thái khi nút bị disable -->
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="#F5F7FA"/>
+            <corners android:radius="15dp"/>
+        </shape>
+    </item>
+
+    <!-- Trạng thái khi nút được enable -->
+    <item android:state_enabled="true">
+        <shape>
+            <solid android:color="#023D5D"/>
+            <corners android:radius="15dp"/>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="118dp"
+    android:height="118dp"
+    android:viewportWidth="118"
+    android:viewportHeight="118">
+
+    <!-- Vòng tròn viền trắng ngoài -->
+    <path
+        android:pathData="M59,2.5
+                          a56.5,56.5 0 1,0 0.1,0"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="5"
+        android:fillColor="@android:color/transparent"/>
+
+    <!-- Vòng tròn trắng trong -->
+    <path
+        android:pathData="M59.5,13
+                          a46.5,46.5 0 1,0 0.1,0"
+        android:fillColor="#FFFFFFFF"/>
+</vector>

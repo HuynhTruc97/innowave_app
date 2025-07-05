@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentCart"
+    android:background="#E1E4E7">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Toolbar -->
+        <TextView
+            android:id="@+id/tvCartTitle"
+            style="@style/Text_SubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/cart"
+            android:textColor="@color/black_color"
+            android:background="@color/white_color"/>
+
+        <!-- Layout giỏ hàng rỗng -->
+        <LinearLayout
+            android:id="@+id/layoutEmptyCart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="60dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_product_noti"
+                style="@style/Text_SubContent"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/d_grey_color"/>
+
+            <Button
+                android:id="@+id/btnShopNow"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:text="@string/buy_now"
+                style="@style/Text_Button_M"
+                android:textColor="#F5F7FA"
+                android:backgroundTint="@color/primary_color"/>
+
+        </LinearLayout>
+
+        <!-- Layout giỏ hàng có sản phẩm -->
+        <LinearLayout
+            android:id="@+id/layoutCartContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ListView
+                android:id="@+id/lvCartProducts"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="8dp"
+                android:padding="8dp"/>
+
+            <!-- View nhập mã giảm giá -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white_color">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_gift"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvEnterCoupon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/select_or_enter_promotion"
+                    android:textColor="@color/primary_color"
+                    style="@style/Text_SubContent" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_left_arrow"
+                    android:scaleX="-1"/>
+            </LinearLayout>
+
+            <!-- View tổng tiền và nút tiếp tục -->
+            <!--        <include layout="@layout/view_cart_total"/>-->
+
+            <!--        Báo giá tổng tiền và nút Tiếp tục-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white_color">
+
+                <!-- Tổng tiền -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingStart="16dp">
+
+                    <TextView
+                        android:id="@+id/tvTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0đ"
+                        android:textColor="#05486B"
+                        android:fontFamily="@font/nunito_extra_bold"
+                        android:textSize="24sp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:id="@+id/imgArrowUp"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_up"
+                        android:layout_marginStart="8dp"/>
+                </LinearLayout>
+
+                <!-- Nút Tiếp tục -->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCheckout"
+                    android:layout_width="158dp"
+                    android:layout_height="48dp"
+                    android:text="@string/cont"
+                    style="@style/Text_Button_M"
+                    android:textColor="@color/white_color"
+                    android:textAllCaps="false"
+                    android:background="@drawable/bg_solid_button"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="16dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

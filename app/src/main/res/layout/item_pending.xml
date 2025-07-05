@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E8F1">
+
+    <LinearLayout
+        android:id="@+id/item_pending"
+        android:layout_width="388dp"
+        android:layout_height="262dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white_color"
+        android:layout_marginTop="10dp">
+
+        <!-- Dòng trạng thái trên cùng -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pending_payment"
+            android:textColor="@color/error_color"
+            style="@style/Text_Content"
+            android:layout_gravity="end"
+            android:layout_marginTop="5dp"/>
+
+        <!-- Hàng sản phẩm -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgProduct"
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                android:src="@drawable/imv"
+                android:scaleType="fitXY"
+                android:layout_marginEnd="16dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvProductName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/product_code_innowave_wlhp_0103"
+                    style="@style/Text_Content"
+                    android:textColor="@color/black_color"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/tvColor"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/color_black"
+                        android:textColor="@color/grey_color"
+                        style="@style/Text_SubContent"
+                        android:layout_marginTop="2dp"/>
+
+                    <TextView
+                        android:id="@+id/tvQuantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/quantity_x1"
+                        style="@style/Text_SubContent"
+                        android:textColor="@color/d_grey_color"
+                        android:gravity="end"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Giá -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <!--code java để gạch ngang-->
+            <TextView
+                android:id="@+id/tvOldPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price_500000_vnd"
+                android:textColor="@color/d_grey_color"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:id="@+id/tvNewPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price_305000_vnd"
+                style="@style/Text_Content"
+                android:layout_marginStart="3dp"/>
+        </LinearLayout>
+
+        <!-- Tổng số tiền -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/txtTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_price_one_product"
+                style="@style/Text_Content"
+                android:gravity="end"/>
+            <TextView
+                android:id="@+id/priceTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price_305000_vnd_alt"
+                style="@style/Text_Content"
+                android:gravity="end"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- Thông báo thời gian thanh toán -->
+        <!-- Đổi màu và tính realtime trong java-->
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/banking_payment_countdown"
+            style="@style/Text_SubContent"
+            android:background="@drawable/time_box"
+            android:padding="12dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            />
+
+        <!-- 2 nút dưới cùng -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnChangePayment"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="@string/change_payment_method"
+                style="@style/Text_Button_M"
+                android:background="@drawable/btn_outline"
+                android:layout_marginEnd="10dp"
+                android:textAllCaps="false"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnPay"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="@string/make_payment"
+                android:textStyle="bold"
+                style="@style/Text_Button_M"
+                android:textColor="@color/white_color"
+                android:background="@drawable/btn_action"
+                android:textAllCaps="false"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

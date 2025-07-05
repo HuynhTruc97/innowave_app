@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Vòng tròn nền xanh lá -->
+    <path
+        android:fillColor="#22E32A"
+        android:pathData="M24,2C12.95,2 4,10.95 4,22s8.95,20 20,20 20,-8.95 20,-20S35.05,2 24,2z"/>
+    <!-- Dấu tick trắng -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeWidth="0"
+        android:pathData="M34.3,16.3c-0.39,-0.39 -1.02,-0.39 -1.41,0l-9.19,9.19l-4.19,-4.19c-0.39,-0.39 -1.02,-0.39 -1.41,0c-0.39,0.39 -0.39,1.02 0,1.41l4.89,4.89c0.39,0.39 1.02,0.39 1.41,0l9.89,-9.89c0.39,-0.39 0.39,-1.02 0,-1.41z"/>
+</vector> 

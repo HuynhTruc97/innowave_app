@@ -1,0 +1,310 @@
+<resources>
+    <string name="app_name">INNOWAVE</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="nav_home">Trang chủ</string>
+    <string name="nav_cart">Giỏ hàng</string>
+    <string name="nav_profile">Hồ sơ</string>
+    <string name="search_text">Bạn muốn mua gì hôm nay...</string>
+    <string name="banner_name">INNOWAVE Store</string>
+    <string name="flash_sale_remaining">Còn lại:</string>
+    <string name="newest_product">Sản phẩm mới nhất</string>
+    <string name="view_all">Xem tất cả</string>
+    <string name="summer_hot_sale">Hot sale chào hè</string>
+    <string name="end_time">Kết thúc sau:</string>
+    <string name="weekend_hot_deal">Hot sale cuối tuần</string>
+    <string name="hot_deal_party">Đại tiệc hot deal</string>
+    <string name="filter">Bộ lọc</string>
+    <string name="price_range">Khoảng giá (VNĐ)</string>
+    <string name="product_sort">Phân loại tai nghe</string>
+    <string name="wlhp">Chụp tai không dây</string>
+    <string name="wlep">In-ear không dây</string>
+    <string name="whp"> Chụp tai có dây</string>
+    <string name="wep">In-ear có dây</string>
+    <string name="apply">Áp dụng</string>
+    <string name="reset">Thiết lập lại</string>
+    <string name="sorting">Sắp xếp theo</string>
+    <string name="sort">Sắp xếp</string>
+    <string name="default_sort">Mặc định</string>
+    <string name="price_low_high">Giá tăng dần</string>
+    <string name="price_high_low">Giá giảm dần</string>
+    <string name="most_popular">Phổ biến nhất</string>
+    <string name="min_price_hint">Giá từ</string>
+    <string name="max_price_hint">Giá đến</string>
+    <string name="product_color">Màu sắc: </string>
+    <string name="technical_specification">Thông số kỹ thuật</string>
+    <string name="product_review">Đánh giá sản phẩm</string>
+    <string name="product_relevant">Sản phẩm liên quan</string>
+    <string name="add_to_cart">Thêm vào giỏ hàng</string>
+    <string name="buy_now">Mua ngay</string>
+
+
+    <string name="login">Đăng Nhập</string>
+    <string name="type_your_phone_number1">Nhập số điện thoại</string>
+    <string name="type_your_password1">Nhập mật khẩu</string>
+    <string name="cont">Tiếp tục</string>
+    <string name="login_by_account">Đăng nhập bằng tài khoản</string>
+    <string name="btn_login">Đăng nhập</string>
+    <string name="login_by_OTP">Đăng nhập bằng mã OTP</string>
+    <string name="forgot_password1">Quên mật khẩu</string>
+    <string name="or">HOẶC</string>
+    <string name="dont_have_account">Bạn chưa có tài khoản?</string>
+    <string name="sign_up1">Đăng ký</string>
+    <string name="sign_up2">Đăng Ký</string>
+    <string name="type_your_name">Nhập tên (*)</string>
+    <string name="type_your_phone_number2">Nhập số điện thoại (*)</string>
+    <string name="type_your_email">Nhập email</string>
+    <string name="type_your_password2">Nhập mật khẩu (*)</string>
+    <string name="type_your_password_again">Nhập lại mật khẩu (*)</string>
+    <string name="password_hint">Mật khẩu phải có ít nhất 8 ký tự, bao gồm chữ hoa, chữ thường, số và ký tự đặc biệt</string>
+    <string name="read_and_agree">Tôi đã đọc và đồng ý với</string>
+    <string name="terms_and_conditions">các chính sách và điều khoản</string>
+    <string name="have_account">Bạn đã có tài khoản?</string>
+    <string name="login_now">Đăng nhập ngay</string>
+    <string name="forgot_password2">Quên Mật Khẩu</string>
+    <string name="type_your_registered_phone_number">Hãy nhập số điện thoại đã đăng ký vào bên dưới</string>
+    <string name="create_new_password">Tạo Mới Mật Khẩu</string>
+    <string name="type_your_new_password">Hãy nhập mật khẩu mới vào bên dưới</string>
+    <string name="confirm">Xác nhận</string>
+    <string name="type_OTP">Nhập mã xác nhận</string>
+    <string name="type_OTP_send_to_your_phone_number">Vui lòng nhập mã OTP đã được gửi đến số điện thoại của bạn</string>
+    <string name="OTP_will_expire_after">Mã OTP sẽ hết hạn sau</string>
+    <string name="second">giây</string>
+    <string name="resend_OTP">Gửi lại mã OTP</string>
+    <string name="confirm_terms_and_conditions">Vui lòng xác nhận thông tin điều khoản sử dụng, chính sách bảo mật và chính sách thành viên</string>
+    <string name="confirm_detail">Bằng việc đánh dấu vào ô này, Tôi xác nhận: \ni. Đã đọc và đồng ý với các Điều khoản giao dịch và Chính sách bảo mật của INNOWAVE, cho phép thu thập và xử lý dữ liệu cá nhân theo quy định pháp luật.\nii. Tôi cam kết rằng các thông tin cung cấp là hợp pháp, chính xác và đã được bên thứ ba đồng ý nếu có liên quan.</string>
+    <string name="image_result">Kết quả tìm kiếm bằng hình ảnh</string>
+    <string name="press_to_search">Nhấn vào nút chụp để tìm kiếm</string>
+
+
+    <string name="soundcheck">Bộ chỉnh âm</string>
+    <string name="antinoise_mode">Chế độ chống ồn</string>
+    <string name="guarantee">Bảo hành đến:</string>
+    <string name="activate_date">Ngày kích hoạt:</string>
+    <string name="manu_year">Năm sản xuất:</string>
+    <string name="seri_num">Số serial:</string>
+    <string name="wireless_inear">Tai nghe in-ear không dây</string>
+    <string name="kind">Loại tai nghe:</string>
+    <string name="name">Tên thiết bị:</string>
+    <string name="info">Thông tin thiết bị</string>
+    <string name="ur_device">Thiết bị của bạn</string>
+    <string name="setup">Cài đặt thiết bị</string>
+    <string name="list">Danh sách thiết bị</string>
+    <string name="choose_device">Chọn thiết bị mà bạn muốn kết nối:</string>
+    <string name="next">Tiếp theo</string>
+    <string name="finding">Đang tìm kiếm...</string>
+    <string name="guide">Nhấn nút [+] để thêm thiết bị</string>
+    <string name="press">Nhấn nút nguồn</string>
+    <string name="sure">Bạn có chắc chắn muốn đọc hết thông báo?</string>
+    <string name="cancel">Hủy</string>
+    <string name="noti">Thông báo</string>
+    <string name="noti_find">Tìm kiếm thông báo</string>
+    <string name="add_manage">Quản lý địa chỉ</string>
+    <string name="add_create">Tạo địa chỉ</string>
+    <string name="add_address">Thêm địa chỉ</string>
+    <string name="add_device">Thêm thiết bị</string>
+    <string name="man_info">THÔNG TIN NGƯỜI NHẬN</string>
+    <string name="full_name">Họ và tên</string>
+    <string name="force">(Bắt buộc)</string>
+    <string name="fill">Vui lòng nhập</string>
+    <string name="phone_num">Số điện thoại</string>
+    <string name="add_ship">ĐỊA CHỈ NHẬN HÀNG</string>
+    <string name="province">Tỉnh/thành phố</string>
+    <string name="District">Quận/huyện</string>
+    <string name="Ward">Xã/phường</string>
+    <string name="detail_add">Địa chỉ cụ thể</string>
+    <string name="detail">Số nhà, tên đường...</string>
+    <string name="all_read">Bạn đã xem hết thông báo!</string>
+    <string name="noti_content">Nội dung thông báo</string>
+    <string name="manufacture_year">Năm sản xuất: 2025</string>
+    <string name="correct">Sửa</string>
+    <string name="add_detail">Kim Châu, Phường Bình Định, Thị xã An Nhơn, Tỉnh Bình Định</string>
+    <string name="defaultt">MẶC ĐỊNH</string>
+    <string name="defaulttt">Đặt làm mặc định</string>
+    <string name="home">Trang chủ</string>
+    <string name="cart">Giỏ hàng</string>
+    <string name="profile">Tài khoản</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">Email</string>
+    <string name="no_product_noti">Bạn chưa có sản phẩm nào trong giỏ!</string>
+    <string name="select_or_enter_promotion">Chọn hoặc nhập khuyến mãi</string>
+    <string name="delete">Xóa</string>
+    <string name="product_name">INNOWAVE_WLHP-0103</string>
+    <string name="color">Đen</string>
+    <string name="only_one">Chỉ còn 1 sản phẩm</string>
+    <string name="enter_voucher">Chọn khuyến mãi</string>
+    <string name="promotion">Khuyến mãi</string>
+    <string name="voucher">Mã giảm giá/phiếu mua hàng</string>
+    <string name="detail_cost">Báo giá chi tiết</string>
+    <string name="close">Đóng</string>
+    <string name="sub_total">Tổng tạm tính</string>
+    <string name="total">Thành tiền</string>
+    <string name="invite_friends">Giới thiệu bạn bè</string>
+    <string name="history_points">Lịch sử điểm thành viên</string>
+    <string name="manage_order">Quản lý đơn hàng</string>
+    <string name="manage_address">Quản lý địa chỉ</string>
+    <string name="change_language">Thay đổi ngôn ngữ</string>
+    <string name="vietnamese">Tiếng Việt</string>
+    <string name="chat">Trò chuyện với INNOWAVE</string>
+    <string name="policy">Chính sách và điều khoản</string>
+    <string name="member">Thành viên</string>
+    <string name="you_have">Bạn đang có</string>
+    <string name="point">Điểm</string>
+    <string name="total_point">Tổng tích lũy</string>
+    <string name="silver">Bạc</string>
+    <string name="accumulate_point_noti">Tích luỹ thêm 10.000 Điểm để nâng hạng Bạc</string>
+    <string name="delete_account">Xóa tài khoản</string>
+    <string name="sign_out">Đăng xuất</string>
+    <string name="my_device">Thiết bị của tôi</string>
+    <string name="sign_up_sign_in">Đăng ký / Đăng nhập</string>
+    <string name="chat_bot">INNOWAVE CHAT BOT</string>
+    <string name="supporter">CHUYÊN VIÊN HỖ TRỢ INNOWAVE</string>
+    <string name="invite_code">Mã giới thiệu</string>
+    <string name="invite">Giới thiệu ngay</string>
+    <string name="settings">Cài đặt</string>
+    <string name="person_info">THÔNG TIN CÁ NHÂN</string>
+    <string name="gender">Giới tính</string>
+    <string name="dob">Ngày sinh</string>
+    <string name="default_address">Địa chỉ mặc định</string>
+    <string name="update_address">Cập nhật địa chỉ</string>
+
+
+    <string name="order_list">Danh sách đơn hàng</string>
+    <string name="choose_order_status">Chọn trạng thái đơn hàng</string>
+    <string name="pending_payment">Chờ thanh toán</string>
+    <string name="product_code_innowave_wlhp_0103">INNOWAVE_WLHP-0103</string>
+    <string name="color_black">Đen</string>
+    <string name="quantity_x1">x1</string>
+    <string name="price_500000_vnd">₫ 500.000</string>
+    <string name="price_305000_vnd">₫ 305.000</string>
+    <string name="total_price_one_product">Tổng số tiền (1 sản phẩm):</string>
+    <string name="banking_payment_countdown">Thanh toán trong 23 : 51 : 34 bằng TK Ngân hàng liên kết</string>
+    <string name="change_payment_method">Đổi phương thức thanh toán</string>
+    <string name="make_payment">Thanh toán</string>
+    <string name="waiting_for_delivery">Chờ giao hàng</string>
+    <string name="price_305000_vnd_alt">₫ 305.000</string>
+    <string name="one_product">1 sản phẩm</string>
+    <string name="order_in_transit">Đơn hàng đang trên đường giao đến bạn</string>
+    <string name="prompt_confirm_received">Vui lòng chỉ nhấn “Đã nhận được hàng” khi đơn hàng đã được giao đến bạn</string>
+    <string name="confirm_received">Đã nhận được hàng</string>
+    <string name="order_shipped">Đã giao hàng</string>
+    <string name="review_before_deadline">Đánh giá sản phẩm trước 30 Th06 để nhận khuyến mãi</string>
+    <string name="buy_again">Mua lại</string>
+    <string name="review">Đánh giá</string>
+    <string name="back">Back</string>
+    <string name="policies_and_terms">Chính sách và điều khoản</string>
+    <string name="about_innowave">Về INNOWAVE</string>
+    <string name="introduce_innowave">Giới thiệu về INNOWAVE</string>
+    <string name="store_locations">Hệ thống cửa hàng</string>
+    <string name="warranty_center">Trung tâm bảo hành</string>
+    <string name="buying_guide">Hướng dẫn mua hàng</string>
+    <string name="payment_security_policy">Chính sách bảo mật thanh toán</string>
+    <string name="privacy_policy">Chính sách bảo mật</string>
+    <string name="installment_policy">Chính sách trả góp</string>
+    <string name="repair_service">Dịch vụ sửa chữa</string>
+    <string name="general_transaction_conditions">Điều kiện giao dịch chung</string>
+    <string name="payment_policy">Chính sách thanh toán</string>
+    <string name="shipping_policy">Chính sách giao hàng</string>
+    <string name="warranty_policy">Chính sách bảo hành</string>
+    <string name="return_policy">Chính sách đổi trả</string>
+    <string name="facebook">Facebook</string>
+    <string name="facebook_group">Facebook Group</string>
+    <string name="youtube">Youtube</string>
+    <string name="tiktok">Tiktok</string>
+    <string name="instagram">Instagram</string>
+    <string name="support_email">Email: cskh@innowave.vn</string>
+    <string name="free_order_hotline">Gọi mua hàng (miễn phí): 1800 6565</string>
+    <string name="care_hotline">Gọi chăm sóc: 1800 6969</string>
+    <string name="company_innowave_trade_service">CÔNG TY CỔ PHẦN THƯƠNG MẠI - DỊCH VỤ INNOWAVE</string>
+    <string name="business_registration_certificate">Giấy chứng nhận đăng ký doanh nghiệp: 0345112687 do sở KH-ĐT TP.HCM cấp lần đầu ngày 30 tháng 05 năm 2004</string>
+    <string name="head_office_label">ĐỊA CHỈ TRỤ SỞ</string>
+    <string name="head_office_address">01 Võ Duy Ninh, Phường 22, Bình Thạnh, Thành phố Hồ Chí Minh</string>
+    <string name="customer_support">Hỗ trợ khách hàng</string>
+    <string name="purchase_policy">Chính sách mua hàng</string>
+    <string name="innowave_community">Cộng đồng INNOWAVE</string>
+    <string name="contact_us">Liên hệ</string>
+    <string name="company_innowave_tech">Công ty Công nghệ INNOWAVE</string>
+    <string name="innowave_description">• INNOWAVE là một doanh nghiệp startup về công nghệ, tệp khách hàng là sinh viên có khả năng tài chính và người trẻ đi làm. Sản phẩm cung cấp là tai nghe chống ồn kỹ thuật số. Được tìm hiểu và phát triển bởi một nhóm bạn tại thành phố Hồ Chí Minh.</string>
+    <string name="vision_mission_core_values">Tầm nhìn - Sứ mệnh - Giá trị cốt lõi</string>
+    <string name="vision_statement">• INNOWAVE mong muốn trở thành thương hiệu hàng đầu trong lĩnh vực công nghệ âm thanh, mang đến cho khách hàng những trải nghiệm âm thanh vượt trội, giúp họ tận hưởng cuộc sống và công việc với hiệu suất cao nhất. Chúng tôi hướng tới việc tạo ra những sản phẩm không chỉ đơn thuần là công nghệ mà còn là phong cách sống, đồng hành cùng khách hàng trên con đường vươn tới tương lai.</string>
+    <string name="mission_statement">• Sứ mệnh của INNOWAVE là cung cấp những giải pháp âm thanh kỹ thuật số tiên tiến, đem lại trải nghiệm nghe nhạc và làm việc tối ưu cho khách hàng. Chúng tôi cam kết nghiên cứu và phát triển những công nghệ tiên tiến nhất, đồng thời không ngừng cải tiến sản phẩm để đáp ứng và vượt qua mong đợi của khách hàng. Chúng tôi tin rằng mỗi sản phẩm của INNOWAVE sẽ mang đến sự hài lòng tối đa và góp phần nâng cao chất lượng cuộc sống của người sử dụng.</string>
+    <string name="business_scope">Lĩnh vực kinh doanh</string>
+    <string name="product_line_description">• INNOWAVE tự hào mang đến dòng sản phẩm tai nghe cao cấp, đa dạng từ thiết kế đến tính năng, phù hợp với mọi nhu cầu sử dụng. Với công nghệ tiên tiến như chống ồn chủ động (ANC), micro khử ồn ENC, và chất lượng âm thanh Hi-Res, các sản phẩm của chúng tôi không chỉ đáp ứng mà còn vượt qua mong đợi của khách hàng.</string>
+    <string name="nhon_thanh_anh_nhon_binh_dinh_address">Phường Nhơn Thành, Thị xã An Nhơn, Bình Định</string>
+    <string name="phone_number">(+84) 399 229 172</string>
+    <string name="user_name">Đặng Thị Nhật Lệ</string>
+    <string name="message_to_innowave">Lời nhắn cho INNOWAVE</string>
+    <string name="leave_message">Để lại lời nhắn</string>
+    <string name="shipping_method">Phương thức vận chuyển</string>
+    <string name="spx_express">SPX Express</string>
+    <string name="shipping_fee_21000_vnd">₫ 21.000</string>
+    <string name="free_shipping">Miễn Phí</string>
+    <string name="delivery_guarantee_period">Đảm bảo nhận hàng từ 22 Tháng 6 - 26 Tháng 6</string>
+    <string name="voucher_offer_details">Nhận voucher trị giá đ200.000 nếu đơn hàng được giao đến bạn sau ngày 26 Tháng 6 2025</string>
+    <string name="select_a_promotion">Chọn 1 trong những khuyến mãi sau</string>
+    <string name="discount_100000_on_product">Giảm 100.000đ (áp dụng vào giá sản phẩm)</string>
+    <string name="payment_method_label">Phương thức thanh toán</string>
+    <string name="vnpay_qr">VNPAY-QR</string>
+    <string name="atm_credit_debit_card">Thẻ ATM nội địa/Thẻ tín dụng/Thẻ ghi nợ</string>
+    <string name="linked_bank_account">Tài khoản Ngân hàng liên kết</string>
+    <string name="tp_bank">TP Bank</string>
+    <string name="cash_on_delivery">Thanh toán khi nhận hàng</string>
+    <string name="payment_details">Chi tiết thanh toán</string>
+    <string name="subtotal">Tổng tiền hàng</string>
+    <string name="shipping_fee_total">Tổng tiền phí vận chuyển</string>
+    <string name="shipping_fee_discount">Giảm giá phí vận chuyển</string>
+    <string name="discount_shipping_fee_21000">-₫ 21.000</string>
+    <string name="total_voucher_discount">Tổng cộng Voucher giảm giá</string>
+    <string name="discount_voucher_216000">-₫ 216.000</string>
+    <string name="total_payment">Tổng thanh toán</string>
+    <string name="tax_included">Đã bao gồm thuế</string>
+    <string name="agree_with">Đồng ý với</string>
+    <string name="innowave_terms">Điều khoản INNOWAVE</string>
+    <string name="grand_total">Tổng cộng</string>
+    <string name="savings">Tiết kiệm</string>
+    <string name="place_order">Đặt hàng</string>
+    <string name="Nhon_Thuan">Trụ sở Khu vực Nhơn Thuận</string>
+    <string name="coupon_detail">Khuyến mãi áp dụng khi mua đủ 1 sản phẩm, mua tối thiểu 1 sản phẩm</string>
+    <string name="not_selected">Bỏ chọn</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+</resources>

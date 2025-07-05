@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@+id/cbSelect"
+            android:layout_width="24dp"
+            android:layout_height="24dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgProduct"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/sanpham"
+                    android:layout_marginStart="8dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center_vertical"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp">
+
+                    <ImageButton
+                        android:id="@+id/btnDelete"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_delete"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/delete"
+                        android:layout_gravity="end"/>
+
+                    <TextView
+                        android:id="@+id/tvProductName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/product_name"
+                        style="@style/Text_Content"
+                        android:textColor="@color/black_color"/>
+
+                    <TextView
+                        android:id="@+id/tvProductColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/color"
+                        style="@style/Text_SubContent"
+                        android:textColor="@color/grey_color"/>
+
+                    <TextView
+                        android:id="@+id/tvProductPromo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/only_one"
+                        style="@style/Text_SubContent"
+                        android:textColor="@color/warning_color"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="4dp">
+
+                        <TextView
+                            android:id="@+id/tvProductPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="305.000đ"
+                            style="@style/Text_Content"
+                            android:textStyle="bold"
+                            android:textColor="@color/error_color"/>
+
+                        <TextView
+                            android:id="@+id/tvProductOldPrice"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="500.000đ"
+                            style="@style/Text_Content"
+                            android:textColor="@color/d_grey_color"
+                            android:layout_marginStart="8dp"
+                            android:layout_weight="1"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_marginStart="16dp">
+
+                            <ImageView
+                                android:id="@+id/btnMinus"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_minus"/>
+
+                            <TextView
+                                android:id="@+id/tvQuantity"
+                                android:layout_width="34dp"
+                                android:layout_height="20dp"
+                                android:gravity="center"
+                                android:text="1"/>
+
+                            <ImageView
+                                android:id="@+id/btnPlus"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_plus"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tvChoosePromo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="@string/enter_voucher"
+                    style="@style/Text_SubContent"
+                    android:textColor="@color/primary_color"
+                    android:layout_marginStart="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="8dp"/>
+                
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_left_arrow"
+                    android:scaleX="-1"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+            
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

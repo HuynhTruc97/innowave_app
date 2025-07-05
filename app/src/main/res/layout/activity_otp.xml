@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="@android:color/white"
+    tools:context=".OTPActivity">
+
+    <!-- Nút back -->
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/btn_back"
+        android:layout_gravity="start"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="100dp"/>
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/type_OTP"
+        style="@style/Text_Title"
+        android:textStyle="bold"
+        android:textColor="@color/primary_color"
+        android:layout_marginBottom="45dp"/>
+
+    <!-- Mô tả -->
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/type_OTP_send_to_your_phone_number"
+        android:textColor="@color/grey_color"
+        style="@style/Text_Content"
+        android:layout_marginBottom="45dp"/>
+
+    <!-- Dãy ô nhập OTP -->
+    <LinearLayout
+        android:id="@+id/otpContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- 6 ô nhập mã -->
+        <EditText
+            android:id="@+id/otp1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/otp_box_normal"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:layout_marginEnd="8dp"/>
+
+        <EditText
+            android:id="@+id/otp2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/otp_box_normal"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:layout_marginEnd="8dp"/>
+
+        <EditText
+            android:id="@+id/otp3"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/otp_box_normal"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:layout_marginEnd="8dp"/>
+
+        <EditText
+            android:id="@+id/otp4"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/otp_box_normal"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:layout_marginEnd="8dp"/>
+
+        <EditText
+            android:id="@+id/otp5"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/otp_box_normal"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:layout_marginEnd="8dp"/>
+
+        <EditText
+            android:id="@+id/otp6"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/otp_box_normal"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:inputType="number"
+            android:maxLength="1"/>
+    </LinearLayout>
+
+    <!-- Thông báo lỗi hoặc hướng dẫn -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tvError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/OTP_will_expire_after"
+            android:textColor="@color/grey_color"
+            style="@style/Text_Content"/>
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60"
+            android:textColor="@color/grey_color"
+            style="@style/Text_Content"
+            android:layout_marginStart="2dp"/>
+
+        <TextView
+            android:id="@+id/tvSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/second"
+            android:textColor="@color/grey_color"
+            style="@style/Text_Content"
+            android:layout_marginStart="2dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvResend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resend_OTP"
+        style="@style/Text_Content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/primary_color"/>
+
+</LinearLayout>

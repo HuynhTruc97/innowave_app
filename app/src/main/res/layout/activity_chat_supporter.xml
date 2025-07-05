@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatSupporterActivity"
+    android:orientation="vertical"
+    android:background="#E1E4E7">
+
+    <!-- Toolbar -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_color">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_supporter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/Text_SubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/supporter"
+            android:textColor="@color/primary_color"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Nội dung chat và các nút -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingHorizontal="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Tin nhắn chào -->
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Xin chào Ny, mình là Lan - Chuyên viên CSKH tại INNOWAVE."
+                android:background="@drawable/bg_white"
+                style="@style/Text_SubContent"
+                android:textColor="@color/d_grey_color"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:text="Mình có thể giúp gì cho Ny ạ?"
+                android:background="@drawable/bg_white"
+                style="@style/Text_SubContent"
+                android:textColor="@color/d_grey_color"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Khối câu hỏi -->
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_white"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bạn muốn hỏi về:"
+                    style="@style/Text_SubContent"
+                    android:textColor="@color/d_grey_color"
+                    android:textStyle="bold"
+                    android:padding="8dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/l_grey_color"
+                    android:layout_marginBottom="4dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Đơn hàng của tôi đã giao đến đâu?"
+                        android:background="@drawable/bg_white"
+                        style="@style/Text_SubContent"
+                        android:textColor="@color/d_grey_color"
+                        android:paddingLeft="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_left_arrow"
+                        android:scaleX="-1"
+                        android:layout_marginEnd="8dp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/l_grey_color"
+                    android:layout_marginBottom="4dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Điểm của tôi đổi được những voucher nào?"
+                        android:background="@drawable/bg_white"
+                        style="@style/Text_SubContent"
+                        android:textColor="@color/d_grey_color"
+                        android:paddingLeft="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_left_arrow"
+                        android:scaleX="-1"
+                        android:layout_marginEnd="8dp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/l_grey_color"
+                    android:layout_marginBottom="4dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Câu hỏi thường gặp"
+                        android:background="@drawable/bg_white"
+                        style="@style/Text_SubContent"
+                        android:textColor="@color/d_grey_color"
+                        android:paddingLeft="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_left_arrow"
+                        android:scaleX="-1"
+                        android:layout_marginEnd="8dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Câu hỏi thường gặp"
+                android:background="@drawable/bg_grey"
+                style="@style/Text_SubContent"
+                android:textColor="@color/silver_color"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="end"/>
+
+            <!-- Nhóm nút chọn vấn đề -->
+            <TextView
+                style="@style/Text_SubContent"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_white"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:text="Vui lòng chọn vấn đề cần hỗ trợ"
+                android:textColor="@color/d_grey_color" />
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_white"
+                android:paddingBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:text="Vận chuyển"
+                        style="@style/Text_SubContent"
+                        android:padding="0dp"
+                        android:textColor="@color/black_color"
+                        android:backgroundTint="@color/l_grey_color"
+                        android:layout_marginEnd="8dp"/>
+
+                    <Button
+                        android:layout_width="136dp"
+                        android:layout_height="32dp"
+                        android:text="Trả hàng và Hoàn tiền"
+                        style="@style/Text_SubContent"
+                        android:padding="0dp"
+                        android:textColor="@color/black_color"
+                        android:backgroundTint="@color/l_grey_color"/>
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="164dp"
+                    android:layout_height="32dp"
+                    android:text="Mã giảm giá và Khuyến mãi"
+                    style="@style/Text_SubContent"
+                    android:padding="0dp"
+                    android:textColor="@color/black_color"
+                    android:backgroundTint="@color/l_grey_color"
+                    android:layout_marginStart="8dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="Tài khoản"
+                    style="@style/Text_SubContent"
+                    android:padding="0dp"
+                    android:textColor="@color/black_color"
+                    android:backgroundTint="@color/l_grey_color"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom bar: các nút chức năng và ô nhập -->
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="4dp">
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Kiểm tra đơn hàng"
+                style="@style/Text_SubContent"
+                android:padding="0dp"
+                android:textColor="@color/d_grey_color"
+                android:backgroundTint="@color/silver_color"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Liên hệ vận chuyển"
+                style="@style/Text_SubContent"
+                android:padding="0dp"
+                android:textColor="@color/d_grey_color"
+                android:backgroundTint="@color/silver_color"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Hủy đơn hàng"
+                android:padding="0dp"
+                style="@style/Text_SubContent"
+                android:textColor="@color/d_grey_color"
+                android:backgroundTint="@color/silver_color"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_edittext"
+            android:padding="4dp"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Xin chào, mình có thể giúp gì cho bạn?"
+                android:background="@android:color/transparent"
+                android:padding="8dp"
+                android:layout_marginStart="8dp"
+                style="@style/Text_Content"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_send"
+                android:contentDescription="Gửi"
+                android:layout_marginEnd="16dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

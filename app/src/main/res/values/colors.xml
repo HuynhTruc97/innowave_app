@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Core Colors -->
+    <color name="primary_color">#023D5D</color>
+    <color name="secondary_color">#5792AD</color>
+    <color name="black_color">#1F1915</color>
+    <color name="d_grey_color">#4C4A52</color>
+    <color name="grey_color">#9794A0</color>
+    <color name="l_grey_color">#D8D5E0</color>
+    <color name="white_color">#FFFFFF</color>
+    <color name="grey_blue_color">#E0E8F1</color>
+    <color name="silver_color">#F5F7FA</color>
+
+    <!-- Shade Colors -->
+    <color name="shade_color1">#013450</color>
+    <color name="shade_color2">#012B43</color>
+    <color name="shade_color3">#012237</color>
+    <color name="shade_color4">#001A2A</color>
+    <color name="shade_color5">#00121F</color>
+
+    <!-- Tint Colors -->
+    <color name="tint_color1">#8199AC</color>
+    <color name="tint_color2">#99ADBC</color>
+    <color name="tint_color3">#B2C1CD</color>
+    <color name="tint_color4">#CBD5DD</color>
+    <color name="tint_color5">#E5EAEE</color>
+
+    <!-- Status Colors -->
+    <color name="warning_color">#FBC02D</color>
+    <color name="error_color">#E53835</color>
+    <color name="success_color">#2E7D31</color>
+</resources>

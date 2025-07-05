@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:padding="12dp"
+    android:id="@+id/rvAddressList">
+
+    <!-- Nút Sửa -->
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:text="@string/correct"
+        android:textColor="#043E5E"
+        android:textSize="12sp"
+        android:backgroundTint="@color/white_color"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:gravity="center"
+        android:background="@drawable/stroke"
+        style="@style/Text_Button_M"
+        android:textStyle="bold"/>
+
+    <!-- Tên người nhận -->
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lê Phương Ny"
+        android:textStyle="bold"
+        android:textColor="#023D5D"
+        android:textSize="16sp"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/btnEdit"
+        android:layout_toLeftOf="@id/btnEdit"
+        style="@style/Text_Content"/>
+
+    <!-- Số điện thoại -->
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0787547839"
+        android:textColor="#023D5D"
+        android:textSize="15sp"
+        android:layout_below="@id/tvName"
+        android:layout_alignStart="@id/tvName"
+        android:layout_marginTop="2dp"
+        style="@style/Text_Content"/>
+
+    <!-- Địa chỉ -->
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_detail"
+        android:textColor="#023D5D"
+        android:textSize="15sp"
+        android:layout_below="@id/tvPhone"
+        android:layout_alignStart="@id/tvName"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="80dp"
+        style="@style/Text_Content"/>
+
+    <!-- Nhãn mặc định -->
+    <TextView
+        android:id="@+id/tvDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/defaultt"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textColor="#043E5E"
+        android:background="@drawable/stroke"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_below="@id/tvAddress"
+        android:layout_alignStart="@id/tvName"
+        android:layout_marginTop="6dp"
+        android:visibility="gone"/>
+</RelativeLayout>

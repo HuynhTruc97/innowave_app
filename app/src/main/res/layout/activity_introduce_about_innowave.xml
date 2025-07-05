@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntroduceAboutInnowaveActivity"
+    android:orientation="vertical"
+    android:background="#F5F7FA">
+
+    <!-- Topbar -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/back"
+            android:contentDescription="@string/back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="15dp"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/introduce_innowave"
+            android:textStyle="bold"
+            style="@style/Text_SubTitle"
+            android:textColor="@color/black_color"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F7FA">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="25dp"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp">
+
+                <!-- Tiêu đề lớn -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/introduce_innowave"
+                    style="@style/Text_Title"
+                    android:textColor="@color/black_color"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"/>
+
+                <!-- Tiêu đề phụ -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_innowave"
+                    style="@style/Text_SubTitle"
+                    android:textColor="@color/black_color"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <!-- Đoạn văn 1 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/innowave_description"
+                    style="@style/Text_Content"
+                    android:textColor="@color/black_color"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginStart="10dp"/>
+
+                <!-- Tiêu đề phụ -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vision_mission_core_values"
+                    style="@style/Text_SubTitle"
+                    android:textColor="@color/black_color"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <!-- Đoạn văn 2 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vision_statement"
+                    style="@style/Text_Content"
+                    android:textColor="@color/black_color"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mission_statement"
+                    style="@style/Text_Content"
+                    android:textColor="@color/black_color"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginStart="10dp"
+                    />
+
+                <!-- Tiêu đề phụ -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/business_scope"
+                    style="@style/Text_SubTitle"
+                    android:textColor="@color/black_color"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <!-- Đoạn văn 3 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/product_line_description"
+                    style="@style/Text_Content"
+                    android:textColor="@color/black_color"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginStart="10dp"/>
+
+
+            </LinearLayout>
+
+            <!-- Footer -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#D9D9D9"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/company_innowave_tech"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    style="@style/Text_Content"
+                    android:textColor="@color/black_color"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/business_registration_certificate"
+                    style="@style/Text_SubContent"
+                    android:textColor="@color/black_color"
+                    android:layout_marginTop="2dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/head_office_label"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    style="@style/Text_Content"
+                    android:textColor="@color/black_color"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/head_office_address"
+                    style="@style/Text_SubContent"
+                    android:textColor="@color/black_color"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
+

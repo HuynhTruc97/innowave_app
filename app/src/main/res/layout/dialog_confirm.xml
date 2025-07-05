@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_top_rounded"
+    android:padding="15dp"
+    android:elevation="8dp">
+
+    <ImageView
+        android:id="@+id/btnClose"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/btn_close"
+        android:layout_gravity="start"
+        android:contentDescription="Đóng"
+        android:padding="4dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/primary_color"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="13dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFF6DD"
+        android:padding="10dp"
+        android:layout_marginBottom="7dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon_info"
+            android:contentDescription="Thông báo"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/confirm_terms_and_conditions"
+            android:textColor="@color/warning_color"
+            style="@style/Text_Content"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/cbConfirm"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(*)"
+            style="@style/Text_SubContent"
+            android:textColor="@color/error_color"
+            android:layout_marginStart="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm_detail"
+            style="@style/Text_SubContent"
+            android:layout_marginStart="5dp"/>
+
+    </LinearLayout>
+
+    <android.widget.Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="@string/confirm"
+        android:textAllCaps="false"
+        android:textColor="@color/btn_continue_text_selector"
+        style="@style/Text_EditText"
+        android:background="@drawable/btn_continue_bg_selector"
+        android:enabled="false"
+        android:layout_marginTop="18dp"/>
+</LinearLayout>
