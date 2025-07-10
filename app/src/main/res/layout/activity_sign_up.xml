@@ -61,6 +61,15 @@
                 style="@style/Text_EditText"
                 android:padding="12dp"
                 android:background="@drawable/edtphonenum"/>
+            <TextView
+                android:id="@+id/tvErrorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/error_color"
+                android:textSize="13sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:visibility="gone"/>
 
             <!-- Nhập số điện thoại -->
             <EditText
@@ -74,6 +83,15 @@
                 style="@style/Text_EditText"
                 android:padding="12dp"
                 android:background="@drawable/edtphonenum"/>
+            <TextView
+                android:id="@+id/tvErrorPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/error_color"
+                android:textSize="13sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:visibility="gone"/>
 
             <!-- Nhập email -->
             <EditText
@@ -87,6 +105,15 @@
                 style="@style/Text_EditText"
                 android:padding="12dp"
                 android:background="@drawable/edtphonenum"/>
+            <TextView
+                android:id="@+id/tvErrorEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/error_color"
+                android:textSize="13sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:visibility="gone"/>
 
             <!-- Nhập mật khẩu -->
             <LinearLayout
@@ -118,6 +145,15 @@
                     android:padding="3dp"
                     android:layout_marginEnd="10dp"/>
             </LinearLayout>
+            <TextView
+                android:id="@+id/tvErrorPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/error_color"
+                android:textSize="13sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:visibility="gone"/>
 
             <!-- Nhập lại mật khẩu -->
             <LinearLayout
@@ -149,20 +185,30 @@
                     android:padding="3dp"
                     android:layout_marginEnd="10dp"/>
             </LinearLayout>
-
-            <!-- Gợi ý mật khẩu -->
             <TextView
-                android:id="@+id/tvPasswordHint"
+                android:id="@+id/tvErrorRePassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:textColor="@color/error_color"
+                android:textSize="13sp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
-                android:text="@string/password_hint"
-                android:textColor="@color/grey_color"
-                style="@style/Text_SubContent"/>
+                android:visibility="gone"/>
+
+            <!-- Gợi ý mật khẩu -->
 
             <!-- Checkbox đồng ý điều khoản -->
+            <TextView
+                android:id="@+id/tvPasswordHint"
+                style="@style/Text_SubContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/password_hint"
+                android:textColor="@color/grey_color" />
+
             <LinearLayout
                 android:id="@+id/layoutAgree"
                 android:layout_width="match_parent"

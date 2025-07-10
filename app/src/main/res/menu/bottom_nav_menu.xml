@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/mnHome"
+        android:id="@+id/fragment_home_page"
         android:icon="@drawable/ic_home"
-        android:title="Trang chủ"/>
+        android:title="Trang chủ"
+        app:showAsAction="never"/>
     <item
         android:id="@+id/mnProduct"
         android:icon="@drawable/ic_product"
-        android:title="Sản phẩm"/>
+        android:title="Sản phẩm"
+        app:showAsAction="never"/>
     <item
-        android:id="@+id/mnCart"
+        android:id="@+id/fragment_cart"
         android:icon="@drawable/ic_cart"
-        android:title="Giỏ hàng"/>
+        android:title="Giỏ hàng"
+        app:showAsAction="never"/>
     <item
-        android:id="@+id/mnAccount"
+        android:id="@+id/fragment_guest_account"
         android:icon="@drawable/ic_account"
-        android:title="Tài khoản"/>
+        android:title="Tài khoản"
+        app:showAsAction="never"/>
 </menu> 

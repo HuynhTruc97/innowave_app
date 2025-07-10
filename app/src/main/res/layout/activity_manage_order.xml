@@ -51,13 +51,12 @@
         app:tabGravity="fill"
         android:contentDescription="@string/choose_order_status"/>
 
-    <LinearLayout
-        android:id="@+id/LayoutContainer"
+    <!-- Thay thế LayoutContainer bằng FrameLayout để chứa fragment -->
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_marginTop="10dp">
-
-    </LinearLayout>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp" />
 
 </LinearLayout>

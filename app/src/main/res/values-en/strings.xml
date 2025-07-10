@@ -1,0 +1,321 @@
+<resources>
+    <string name="app_name">INNOWAVE</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="nav_home">Home</string>
+    <string name="nav_cart">Cart</string>
+    <string name="nav_profile">Profile</string>
+    <string name="search_text">What do you want to buy today...</string>
+    <string name="banner_name">INNOWAVE Store</string>
+    <string name="flash_sale_remaining">Remaining:</string>
+    <string name="newest_product">Latest Products</string>
+    <string name="view_all">View All</string>
+    <string name="summer_hot_sale">Summer Hot Sale</string>
+    <string name="end_time">Ends in:</string>
+    <string name="weekend_hot_deal">Weekend Hot Deal</string>
+    <string name="hot_deal_party">Hot Deal Party</string>
+    <string name="filter">Filter</string>
+    <string name="price_range">Price Range (VND)</string>
+    <string name="product_sort">Headphone Classification</string>
+    <string name="wlhp">Wireless Over-ear</string>
+    <string name="wlep">Wireless In-ear</string>
+    <string name="whp">Wired Over-ear</string>
+    <string name="wep">Wired In-ear</string>
+    <string name="apply">Apply</string>
+    <string name="reset">Reset</string>
+    <string name="sorting">Sort by</string>
+    <string name="sort">Sort</string>
+    <string name="default_sort">Default</string>
+    <string name="price_low_high">Price: Low to High</string>
+    <string name="price_high_low">Price: High to Low</string>
+    <string name="most_popular">Most Popular</string>
+    <string name="min_price_hint">Price from</string>
+    <string name="max_price_hint">Price to</string>
+    <string name="product_color">Color: </string>
+    <string name="technical_specification">Technical Specifications</string>
+    <string name="product_review">Product Reviews</string>
+    <string name="product_relevant">Related Products</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="buy_now">Buy Now</string>
+
+    <string name="login">Login</string>
+    <string name="type_your_phone_number1">Enter phone number</string>
+    <string name="type_your_password1">Enter password</string>
+    <string name="cont">Continue</string>
+    <string name="login_by_account">Login with account</string>
+    <string name="btn_login">Login</string>
+    <string name="login_by_OTP">Login with OTP</string>
+    <string name="forgot_password1">Forgot password</string>
+    <string name="or">OR</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="sign_up1">Sign up</string>
+    <string name="sign_up2">Sign Up</string>
+    <string name="type_your_name">Enter name (*)</string>
+    <string name="type_your_phone_number2">Enter phone number (*)</string>
+    <string name="type_your_email">Enter email</string>
+    <string name="type_your_password2">Enter password (*)</string>
+    <string name="type_your_password_again">Re-enter password (*)</string>
+    <string name="password_hint">Password must be at least 8 characters, including uppercase, lowercase, numbers and special characters</string>
+    <string name="read_and_agree">I have read and agree to</string>
+    <string name="terms_and_conditions">policies and terms</string>
+    <string name="have_account">Already have an account?</string>
+    <string name="login_now">Login now</string>
+    <string name="forgot_password2">Forgot Password</string>
+    <string name="type_your_registered_phone_number">Please enter your registered phone number below</string>
+    <string name="create_new_password">Create New Password</string>
+    <string name="type_your_new_password">Please enter your new password below</string>
+    <string name="confirm">Confirm</string>
+    <string name="type_OTP">Enter verification code</string>
+    <string name="type_OTP_send_to_your_phone_number">Please enter the OTP code sent to your phone number</string>
+    <string name="OTP_will_expire_after">OTP will expire after</string>
+    <string name="second">seconds</string>
+    <string name="resend_OTP">Resend OTP</string>
+    <string name="confirm_terms_and_conditions">Please confirm the terms of use, privacy policy and membership policy</string>
+    <string name="confirm_detail">By checking this box, I confirm: \ni. I have read and agree to INNOWAVE\'s Transaction Terms and Privacy Policy, allowing the collection and processing of personal data in accordance with legal regulations.\nii. I commit that the information provided is legal, accurate and has been agreed by third parties if relevant.</string>
+    <string name="image_result">Image search results</string>
+    <string name="press_to_search">Press the capture button to search</string>
+
+    <string name="soundcheck">Sound adjustment</string>
+    <string name="antinoise_mode">Noise cancellation mode</string>
+    <string name="guarantee">Warranty until:</string>
+    <string name="activate_date">Activation date:</string>
+    <string name="manu_year">Manufacturing year:</string>
+    <string name="seri_num">Serial number:</string>
+    <string name="wireless_inear">Wireless in-ear headphones</string>
+    <string name="kind">Headphone type:</string>
+    <string name="name">Device name:</string>
+    <string name="info">Device information</string>
+    <string name="ur_device">Your device</string>
+    <string name="setup">Device setup</string>
+    <string name="list">Device list</string>
+    <string name="choose_device">Choose the device you want to connect:</string>
+    <string name="next">Next</string>
+    <string name="finding">Searching...</string>
+    <string name="guide">Press the [+] button to add device</string>
+    <string name="press">Press power button</string>
+    <string name="sure">Are you sure you want to read all notifications?</string>
+    <string name="cancel">Cancel</string>
+    <string name="noti">Notifications</string>
+    <string name="noti_find">Search notifications</string>
+    <string name="add_manage">Manage addresses</string>
+    <string name="add_create">Create address</string>
+    <string name="add_address">Add address</string>
+    <string name="add_device">Add device</string>
+    <string name="man_info">RECIPIENT INFORMATION</string>
+    <string name="full_name">Full name</string>
+    <string name="force">(Required)</string>
+    <string name="fill">Please enter</string>
+    <string name="phone_num">Phone number</string>
+    <string name="add_ship">SHIPPING ADDRESS</string>
+    <string name="province">Province/City</string>
+    <string name="District">District</string>
+    <string name="Ward">Ward</string>
+    <string name="detail_add">Detailed address</string>
+    <string name="detail">House number, street name...</string>
+    <string name="all_read">You have read all notifications!</string>
+    <string name="noti_content">Notification content</string>
+    <string name="manufacture_year">Manufacturing year: 2025</string>
+    <string name="correct">Edit</string>
+    <string name="add_detail">Kim Chau, Binh Dinh Ward, An Nhon Town, Binh Dinh Province</string>
+    <string name="defaultt">DEFAULT</string>
+    <string name="defaulttt">Set as default</string>
+    <string name="home">Home</string>
+    <string name="cart">Cart</string>
+    <string name="profile">Account</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">Email</string>
+    <string name="no_product_noti">You don\'t have any products in your cart!</string>
+    <string name="select_or_enter_promotion">Select or enter promotion</string>
+    <string name="delete">Delete</string>
+    <string name="product_name">INNOWAVE_WLHP-0103</string>
+    <string name="color">Black</string>
+    <string name="only_one">Only 1 product left</string>
+    <string name="enter_voucher">Select promotion</string>
+    <string name="promotion">Promotion</string>
+    <string name="voucher">Discount code/Voucher</string>
+    <string name="detail_cost">Detailed cost breakdown</string>
+    <string name="close">Close</string>
+    <string name="sub_total">Subtotal</string>
+    <string name="total">Total</string>
+    <string name="invite_friends">Invite friends</string>
+    <string name="history_points">Member points history</string>
+    <string name="manage_order">Order management</string>
+    <string name="manage_address">Address management</string>
+    <string name="change_language">Change language</string>
+    <string name="vietnamese">Vietnamese</string>
+    <string name="english">English</string>
+    <string name="chat">Chat with INNOWAVE</string>
+    <string name="policy">Policies and terms</string>
+    <string name="member">Member</string>
+    <string name="you_have">You currently have</string>
+    <string name="point">Points</string>
+    <string name="total_point">Total accumulated</string>
+    <string name="silver">Silver</string>
+    <string name="accumulate_point_noti">Accumulate 10,000 more points to upgrade to Silver</string>
+    <string name="delete_account">Delete account</string>
+    <string name="sign_out">Sign out</string>
+    <string name="my_device">My device</string>
+    <string name="sign_up_sign_in">Sign up / Sign in</string>
+    <string name="chat_bot">INNOWAVE CHAT BOT</string>
+    <string name="supporter">INNOWAVE SUPPORT SPECIALIST</string>
+    <string name="invite_code">Invitation code</string>
+    <string name="invite">Invite now</string>
+    <string name="settings">Settings</string>
+    <string name="person_info">PERSONAL INFORMATION</string>
+    <string name="gender">Gender</string>
+    <string name="dob">Date of birth</string>
+    <string name="default_address">Default address</string>
+    <string name="update_address">Update address</string>
+
+    <string name="order_list">Order list</string>
+    <string name="choose_order_status">Choose order status</string>
+    <string name="pending_payment">Pending payment</string>
+    <string name="product_code_innowave_wlhp_0103">INNOWAVE_WLHP-0103</string>
+    <string name="color_black">Black</string>
+    <string name="quantity_x1">x1</string>
+    <string name="price_500000_vnd">₫ 500,000</string>
+    <string name="price_305000_vnd">₫ 305,000</string>
+    <string name="total_price">Total amount:</string>
+    <string name="product">product</string>
+    <string name="banking_payment_countdown">Pay within 23 : 51 : 34 using linked bank account</string>
+    <string name="change_payment_method">Change payment method</string>
+    <string name="make_payment">Pay</string>
+    <string name="waiting_for_delivery">Waiting for delivery</string>
+    <string name="price_305000_vnd_alt">₫ 305,000</string>
+    <string name="one_product">1 product</string>
+    <string name="order_in_transit">Order is on the way to you</string>
+    <string name="prompt_confirm_received">Please only press "Received" when the order has been delivered to you</string>
+    <string name="confirm_received">Received</string>
+    <string name="order_shipped">Shipped</string>
+    <string name="review_before_deadline">Review product before June 30 to receive promotion</string>
+    <string name="buy_again">Buy again</string>
+    <string name="review">Review</string>
+    <string name="back">Back</string>
+    <string name="policies_and_terms">Policies and terms</string>
+    <string name="about_innowave">About INNOWAVE</string>
+    <string name="introduce_innowave">Introduce about INNOWAVE</string>
+    <string name="store_locations">Store system</string>
+    <string name="warranty_center">Warranty center</string>
+    <string name="buying_guide">Buying guide</string>
+    <string name="payment_security_policy">Payment security policy</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="installment_policy">Installment policy</string>
+    <string name="repair_service">Repair service</string>
+    <string name="general_transaction_conditions">General transaction conditions</string>
+    <string name="payment_policy">Payment policy</string>
+    <string name="shipping_policy">Shipping policy</string>
+    <string name="warranty_policy">Warranty policy</string>
+    <string name="return_policy">Return policy</string>
+    <string name="facebook">Facebook</string>
+    <string name="facebook_group">Facebook Group</string>
+    <string name="youtube">Youtube</string>
+    <string name="tiktok">Tiktok</string>
+    <string name="instagram">Instagram</string>
+    <string name="support_email">Email: cskh@innowave.vn</string>
+    <string name="free_order_hotline">Order hotline (free): 1800 6565</string>
+    <string name="care_hotline">Care hotline: 1800 6969</string>
+    <string name="company_innowave_trade_service">INNOWAVE TRADING - SERVICE JOINT STOCK COMPANY</string>
+    <string name="business_registration_certificate">Business registration certificate: 0345112687 issued by Ho Chi Minh City Department of Planning and Investment for the first time on May 30, 2004</string>
+    <string name="head_office_label">HEAD OFFICE ADDRESS</string>
+    <string name="head_office_address">01 Vo Duy Ninh, Ward 22, Binh Thanh, Ho Chi Minh City</string>
+    <string name="customer_support">Customer support</string>
+    <string name="purchase_policy">Purchase policy</string>
+    <string name="innowave_community">INNOWAVE Community</string>
+    <string name="contact_us">Contact</string>
+    <string name="company_innowave_tech">INNOWAVE Technology Company</string>
+    <string name="innowave_description">• INNOWAVE is a technology startup business, targeting students with financial capacity and young working people. The product provided is digital noise-canceling headphones. Researched and developed by a group of friends in Ho Chi Minh City.</string>
+    <string name="vision_mission_core_values">Vision - Mission - Core Values</string>
+    <string name="vision_statement">• INNOWAVE aspires to become a leading brand in the field of audio technology, bringing customers superior audio experiences, helping them enjoy life and work with the highest efficiency. We aim to create products that are not just technology but also a lifestyle, accompanying customers on their journey to the future.</string>
+    <string name="mission_statement">• INNOWAVE\'s mission is to provide advanced digital audio solutions, bringing optimal music listening and working experiences to customers. We are committed to researching and developing the most advanced technologies, while continuously improving products to meet and exceed customer expectations. We believe that each INNOWAVE product will bring maximum satisfaction and contribute to improving users\' quality of life.</string>
+    <string name="business_scope">Business scope</string>
+    <string name="product_line_description">• INNOWAVE proudly brings high-end headphone product lines, diverse from design to features, suitable for all usage needs. With advanced technologies such as Active Noise Cancellation (ANC), ENC noise-canceling microphone, and Hi-Res audio quality, our products not only meet but exceed customer expectations.</string>
+    <string name="nhon_thanh_anh_nhon_binh_dinh_address">Nhon Thanh Ward, An Nhon Town, Binh Dinh</string>
+    <string name="phone_number">(+84) 399 229 172</string>
+    <string name="user_name">Dang Thi Nhat Le</string>
+    <string name="message_to_innowave">Message to INNOWAVE</string>
+    <string name="leave_message">Leave a message</string>
+    <string name="shipping_method">Shipping method</string>
+    <string name="spx_express">SPX Express</string>
+    <string name="shipping_fee">₫ 35,000</string>
+    <string name="free_shipping">Free</string>
+    <string name="delivery_guarantee_period">Guaranteed delivery from June 22 - June 26</string>
+    <string name="voucher_offer_details">Receive voucher worth ₫200,000 if order is delivered after June 26, 2025</string>
+    <string name="select_a_promotion">Choose 1 of the following promotions</string>
+    <string name="discount_100000_on_product">Discount ₫100,000 (applied to product price)</string>
+    <string name="payment_method_label">Payment method</string>
+    <string name="vnpay_qr">VNPAY-QR</string>
+    <string name="atm_credit_debit_card">Domestic ATM card/Credit card/Debit card</string>
+    <string name="linked_bank_account">Linked bank account</string>
+    <string name="tp_bank">TP Bank</string>
+    <string name="cash_on_delivery">Cash on delivery</string>
+    <string name="payment_details">Payment details</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="shipping_fee_total">Total shipping fee</string>
+    <string name="shipping_fee_discount">Shipping fee discount</string>
+    <string name="discount_shipping_fee_21000">-₫ 21,000</string>
+    <string name="total_voucher_discount">Total voucher discount</string>
+    <string name="discount_voucher_216000">-₫ 216,000</string>
+    <string name="total_payment">Total payment</string>
+    <string name="tax_included">Tax included</string>
+    <string name="agree_with">Agree with</string>
+    <string name="innowave_terms">INNOWAVE Terms</string>
+    <string name="grand_total">Grand total</string>
+    <string name="savings">Savings</string>
+    <string name="place_order">Place order</string>
+    <string name="Nhon_Thuan">Nhon Thuan Regional Office</string>
+    <string name="coupon_detail">Promotion applies when purchasing 1 product, minimum purchase 1 product</string>
+    <string name="not_selected">Deselect</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+    <string name="quantity">Quantity:</string>
+    <string name="edit_address">Edit address</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <string name="notification">Notification</string>
+    <string name="login_required_message">You need to log in to use this feature</string>
+    <string name="login_required_title">Login Required</string>
+    <string name="manage_orders">Manage Orders</string>
+    <string name="order_in_preparation">Your order is being prepared and will be delivered to you soon</string>
+    <string name="waiting_for_pickup">Waiting for pickup</string>
+    <string name="view_more">View more</string>
+    <string name="back_home">Back to home page</string>
+    <string name="view_order">View orders</string>
+    <string name="order_success">Your order has been placed successfully.</string>
+</resources>

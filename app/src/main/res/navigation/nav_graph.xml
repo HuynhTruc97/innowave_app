@@ -3,26 +3,64 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/fragment_home_page">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.nhom11.innowave.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
-
+        android:id="@+id/fragment_home_page"
+        android:name="com.nhom11.innowave.FragmentHomePage"
+        android:label="Trang chủ"
+        tools:layout="@layout/fragment_home_page">
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_fragment_home_page_to_fragment_cart"
+            app:destination="@id/fragment_cart" />
+        <action
+            android:id="@+id/action_fragment_home_page_to_fragment_guest_account"
+            app:destination="@id/fragment_guest_account" />
     </fragment>
+
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.nhom11.innowave.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
-
+        android:id="@+id/fragment_cart"
+        android:name="com.nhom11.innowave.FragmentCart"
+        android:label="Giỏ hàng"
+        tools:layout="@layout/fragment_cart">
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            android:id="@+id/action_fragment_cart_to_fragment_home_page"
+            app:destination="@id/fragment_home_page" />
+        <action
+            android:id="@+id/action_fragment_cart_to_fragment_guest_account"
+            app:destination="@id/fragment_guest_account" />
     </fragment>
+
+    <fragment
+        android:id="@+id/fragment_guest_account"
+        android:name="com.nhom11.innowave.FragmentGuestAccount"
+        android:label="Tài khoản"
+        tools:layout="@layout/fragment_guest_account">
+        <action
+            android:id="@+id/action_fragment_guest_account_to_fragment_home_page"
+            app:destination="@id/fragment_home_page" />
+        <action
+            android:id="@+id/action_fragment_guest_account_to_fragment_cart"
+            app:destination="@id/fragment_cart" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_signed_in_account"
+        android:name="com.nhom11.innowave.FragmentSignedInAccount"
+        android:label="Tài khoản"
+        tools:layout="@layout/fragment_signed_in_account">
+        <action
+            android:id="@+id/action_fragment_signed_in_account_to_fragment_home_page"
+            app:destination="@id/fragment_home_page" />
+        <action
+            android:id="@+id/action_fragment_signed_in_account_to_fragment_cart"
+            app:destination="@id/fragment_cart" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_product_page"
+        android:name="com.nhom11.innowave.FragmentProductPage"
+        android:label="Sản phẩm"
+        tools:layout="@layout/fragment_product_page" />
+
 </navigation>

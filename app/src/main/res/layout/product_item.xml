@@ -79,6 +79,8 @@
             android:layout_gravity="end|bottom"
             android:padding="8dp"
             android:src="@drawable/ic_add_to_cart"
-            />
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless" />
     </FrameLayout>
 </androidx.cardview.widget.CardView>

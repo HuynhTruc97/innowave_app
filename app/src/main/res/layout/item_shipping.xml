@@ -116,7 +116,7 @@
                 android:id="@+id/txtTotal"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/total_price_one_product"
+                android:text="@string/total_price"
                 android:layout_weight="1"
                 style="@style/Text_Content"
                 android:textColor="@color/d_grey_color"

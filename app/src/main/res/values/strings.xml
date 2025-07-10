@@ -145,6 +145,7 @@
     <string name="manage_address">Quản lý địa chỉ</string>
     <string name="change_language">Thay đổi ngôn ngữ</string>
     <string name="vietnamese">Tiếng Việt</string>
+    <string name="english">Tiếng Anh</string>
     <string name="chat">Trò chuyện với INNOWAVE</string>
     <string name="policy">Chính sách và điều khoản</string>
     <string name="member">Thành viên</string>
@@ -177,7 +178,8 @@
     <string name="quantity_x1">x1</string>
     <string name="price_500000_vnd">₫ 500.000</string>
     <string name="price_305000_vnd">₫ 305.000</string>
-    <string name="total_price_one_product">Tổng số tiền (1 sản phẩm):</string>
+    <string name="total_price">Tổng số tiền</string>
+    <string name="product">sản phẩm</string>
     <string name="banking_payment_countdown">Thanh toán trong 23 : 51 : 34 bằng TK Ngân hàng liên kết</string>
     <string name="change_payment_method">Đổi phương thức thanh toán</string>
     <string name="make_payment">Thanh toán</string>
@@ -185,7 +187,7 @@
     <string name="price_305000_vnd_alt">₫ 305.000</string>
     <string name="one_product">1 sản phẩm</string>
     <string name="order_in_transit">Đơn hàng đang trên đường giao đến bạn</string>
-    <string name="prompt_confirm_received">Vui lòng chỉ nhấn “Đã nhận được hàng” khi đơn hàng đã được giao đến bạn</string>
+    <string name="prompt_confirm_received">Vui lòng chỉ nhấn "Đã nhận được hàng" khi đơn hàng đã được giao đến bạn</string>
     <string name="confirm_received">Đã nhận được hàng</string>
     <string name="order_shipped">Đã giao hàng</string>
     <string name="review_before_deadline">Đánh giá sản phẩm trước 30 Th06 để nhận khuyến mãi</string>
@@ -237,7 +239,7 @@
     <string name="leave_message">Để lại lời nhắn</string>
     <string name="shipping_method">Phương thức vận chuyển</string>
     <string name="spx_express">SPX Express</string>
-    <string name="shipping_fee_21000_vnd">₫ 21.000</string>
+    <string name="shipping_fee">₫ 35.000</string>
     <string name="free_shipping">Miễn Phí</string>
     <string name="delivery_guarantee_period">Đảm bảo nhận hàng từ 22 Tháng 6 - 26 Tháng 6</string>
     <string name="voucher_offer_details">Nhận voucher trị giá đ200.000 nếu đơn hàng được giao đến bạn sau ngày 26 Tháng 6 2025</string>
@@ -252,8 +254,9 @@
     <string name="payment_details">Chi tiết thanh toán</string>
     <string name="subtotal">Tổng tiền hàng</string>
     <string name="shipping_fee_total">Tổng tiền phí vận chuyển</string>
+    <string name="shipping_fee_35000">₫ 35.000</string>
     <string name="shipping_fee_discount">Giảm giá phí vận chuyển</string>
-    <string name="discount_shipping_fee_21000">-₫ 21.000</string>
+    <string name="discount_shipping_fee_35000">-₫ 35.000</string>
     <string name="total_voucher_discount">Tổng cộng Voucher giảm giá</string>
     <string name="discount_voucher_216000">-₫ 216.000</string>
     <string name="total_payment">Tổng thanh toán</string>
@@ -270,6 +273,8 @@
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="previous">Previous</string>
+    <string name="quantity">Số lượng:</string>
+    <string name="edit_address">Thay đổi địa chỉ</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
@@ -307,4 +312,16 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="waiting_for_pickup">Chờ lấy hàng</string>
+    <string name="notification">Thông báo</string>
+    <string name="login_required_message">Bạn cần đăng nhập để thực hiện chức năng này</string>
+    <string name="login_required_title">Yêu cầu đăng nhập</string>
+    <string name="manage_orders">Quản lý đơn hàng</string>
+    <string name="order_in_preparation">Đơn hàng đang được chuẩn bị và sẽ sớm được giao đến bạn</string>
+    <string name="view_more">Xem thêm</string>
+    <string name="order_success">Đơn hàng đã được đặt thành công</string>
+    <string name="back_home">Quay về trang chủ</string>
+    <string name="view_order">Xem đơn hàng</string>
+    <string name="total_price_one_product">Tổng giá các sản phẩm</string>
+    <string name="discount_shipping_fee_21000">Giảm phí vận chuyển 21.000đ</string>
 </resources>

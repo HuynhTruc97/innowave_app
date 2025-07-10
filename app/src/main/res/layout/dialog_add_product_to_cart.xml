@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_top_rounded"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:id="@+id/btnClose"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/btn_close"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+        <TextView
+            android:id="@+id/tvCouponTitle"
+            style="@style/Text_SubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="@string/add_to_cart"
+            android:textColor="@color/black_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/primary_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imvPhoto"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/sanpham"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="0dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="0dp">
+
+            <TextView
+                android:id="@+id/txtProductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/product_name"
+                android:fontFamily="@font/nunito_semi_bold"
+                android:textSize="18sp"
+                android:textColor="@color/black_color"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/txtNewPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="305.000"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="24sp"
+                android:textColor="@color/primary_color"
+                android:layout_marginBottom="4dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvOldPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="509.000"
+                    style="@style/Text_SubContent"
+                    android:textColor="@color/grey_color"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/txtDiscountPercent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-40%"
+                    style="@style/Text_SubContent"
+                    android:textColor="@color/error_color"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Màu sắc -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingStart="16dp"
+        android:minHeight="40dp">
+        <TextView
+            android:id="@+id/labelProductColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/product_color"
+            style="@style/Text_Content"
+            android:textColor="@color/black_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:id="@+id/product_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Text_Content"
+            android:text=" Đen"
+            android:textSize="15sp"
+            android:textColor="@color/black_color"
+            app:layout_constraintStart_toEndOf="@id/labelProductColor"
+            app:layout_constraintTop_toTopOf="@id/labelProductColor"
+            app:layout_constraintBottom_toBottomOf="@id/labelProductColor"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- List button -->
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/variantChipGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:singleSelection="true"
+        app:chipSpacing="8dp" />
+
+    <!-- Số lượng -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:minHeight="40dp">
+        <TextView
+            android:id="@+id/labelQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity"
+            style="@style/Text_Content"
+            android:textColor="@color/black_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+        <LinearLayout
+            android:id="@+id/quantityControlLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/labelQuantity"
+            app:layout_constraintBottom_toBottomOf="@id/labelQuantity">
+            <ImageView
+                android:id="@+id/btnMinus"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_minus"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+            <TextView
+                android:id="@+id/tvQuantity"
+                android:layout_width="34dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/black_color"/>
+            <ImageView
+                android:id="@+id/btnPlus"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_plus"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnAddToCart"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/add_to_cart"
+        android:fontFamily="@font/nunito_medium"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/primary_color"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textStyle="bold" />
+</LinearLayout>

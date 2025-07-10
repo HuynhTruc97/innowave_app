@@ -25,7 +25,10 @@
             android:layout_height="40dp"
             android:src="@drawable/ic_back"
             android:contentDescription="Back"
-            android:scaleType="center" />
+            android:scaleType="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless" />
 
         <View
             android:layout_width="0dp"
@@ -40,6 +43,9 @@
             android:src="@drawable/ic_cart"
             android:contentDescription="Cart"
             android:scaleType="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
             />
 
         <!-- Home button -->
@@ -50,7 +56,10 @@
             android:src="@drawable/ic_home"
             android:contentDescription="Home"
             android:scaleType="center"
-            android:layout_marginStart="8dp" />
+            android:layout_marginStart="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless" />
     </LinearLayout>
 
     <!-- Nội dung trang -->
@@ -106,18 +115,19 @@
                 </FrameLayout>
 
                 <!-- Tên sản phẩm -->
+
+                <!-- Màu sắc -->
                 <TextView
                     android:id="@+id/tvProductName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Tai nghe INNOWAVE_WLHP-0100"
+                    android:layout_marginTop="8dp"
                     android:fontFamily="@font/nunito_extra_bold"
-                    android:textStyle="bold"
-                    android:textSize="22sp"
+                    android:text="Tai nghe INNOWAVE_WLHP-0100"
                     android:textColor="@color/primary_color"
-                    android:layout_marginTop="8dp" />
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
 
-                <!-- Màu sắc -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -139,26 +149,64 @@
 
                 </LinearLayout>
 
-                <!-- List button -->
+                <!-- Số lượng -->
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginTop="4dp">
+                    android:layout_marginTop="16dp"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/quantity"
+                        style="@style/Text_Content"
+                        android:layout_weight="1"/>
 
-                    <androidx.appcompat.widget.AppCompatButton
+                    <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:text="Đen"
-                        android:textAllCaps="false"
-                        android:backgroundTint="@color/primary_color"
-                        android:textColor="@android:color/white"
-                        android:textSize="14sp"
-                        android:background="@drawable/bg_search"
-                        android:layout_marginEnd="4dp" />
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginStart="16dp">
 
+                        <ImageView
+                            android:id="@+id/btnMinus"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_minus"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:background="?attr/selectableItemBackgroundBorderless"/>
 
+                        <TextView
+                            android:id="@+id/tvQuantity"
+                            android:layout_width="34dp"
+                            android:layout_height="20dp"
+                            android:gravity="center"
+                            android:text="1"/>
+
+                        <ImageView
+                            android:id="@+id/btnPlus"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_plus"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:background="?attr/selectableItemBackgroundBorderless"/>
+                    </LinearLayout>
                 </LinearLayout>
+
+
+                <!-- List button (biến thể) -->
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/variantChipGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:singleSelection="true"
+                    app:chipSpacing="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"/>
 
                 <!-- Giá -->
                 <LinearLayout
@@ -221,7 +269,9 @@
                     android:id="@+id/technical_specification_table"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/silver_color">
+                    android:background="@color/silver_color"
+                    android:showDividers="middle"
+                    android:divider="@drawable/divider_spec_row">
                 </TableLayout>
 
                 <View
@@ -304,7 +354,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:layout_marginTop="8dp">
-                    <ListView
+                    <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/lvComments"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"/>
@@ -327,6 +377,7 @@
                     android:layout_marginBottom="8dp" />
 
                 <HorizontalScrollView
+                    android:id="@+id/related_products_scroll"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:scrollbars="none">

@@ -62,11 +62,14 @@
 
                                 <TextView
                                     android:id="@+id/txtUserName"
-                                    android:layout_width="match_parent"
+                                    android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Lê Phương Ny"
-                                    style="@style/Text_SubTitle"
-                                    android:textColor="@color/white_color"/>
+                                    android:text="@string/user_name"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white_color"
+                                    android:layout_marginTop="8dp"/>
+
                                 <TextView
                                     android:id="@+id/txtMember"
                                     android:layout_width="match_parent"
@@ -328,7 +331,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="@string/manage_order"
+                            android:text="@string/manage_orders"
                             style="@style/Text_Content"
                             android:textColor="@color/primary_color"/>
                         <ImageView
@@ -579,7 +582,6 @@
 
                 <!-- Nhóm 6 -->
                 <LinearLayout
-                    android:id="@+id/btnSignOut"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
@@ -592,6 +594,7 @@
 
                     <!-- Đăng xuất -->
                     <LinearLayout
+                        android:id="@+id/btnSignOut"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"

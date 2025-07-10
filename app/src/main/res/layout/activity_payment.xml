@@ -54,769 +54,599 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!--Nội dung phía trên-->
+            <!-- Địa chỉ nhận hàng: Nếu chưa có địa chỉ, hiển thị receiving_address với icon + và text "Thêm địa chỉ nhận hàng" -->
+            <LinearLayout
+                android:id="@+id/receiving_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:background="@drawable/group_radius"
+                android:visibility="gone">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/add"
+                    android:layout_marginEnd="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thêm địa chỉ nhận hàng"
+                    android:textColor="@color/primary_color"
+                    style="@style/Text_Content"/>
+            </LinearLayout>
+            <!-- Địa chỉ nhận hàng: Nếu đã có địa chỉ, hiển thị layoutAddress -->
+            <LinearLayout
+                android:id="@+id/layoutAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/group_radius"
+                android:padding="10dp"
+                android:visibility="gone">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/location"
+                    android:layout_marginEnd="10dp"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="start">
+                        <TextView
+                            android:id="@+id/tvRecipientName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tên người nhận"
+                            style="@style/Text_Content"
+                            android:textColor="@color/black_color"/>
+                        <TextView
+                            android:id="@+id/tvPhoneNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Số điện thoại"
+                            style="@style/Text_SubContent"
+                            android:textColor="@color/grey_color"
+                            android:layout_marginStart="10dp"/>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tvStreetAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Địa chỉ cụ thể"
+                        style="@style/Text_SubContent"
+                        android:textColor="@color/grey_color"/>
+                    <TextView
+                        android:id="@+id/tv_ward_district_province"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phường, Quận, Tỉnh"
+                        style="@style/Text_SubContent"
+                        android:textColor="@color/grey_color"/>
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/btnChangeAddress"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/right"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+            <!-- Thông tin sản phẩm -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="10dp">
+                android:padding="10dp"
+                android:background="@drawable/group_radius"
+                android:layout_marginTop="10dp">
 
-                <!-- Group: Địa chỉ nhận hàng -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvProductPayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"
+                    android:nestedScrollingEnabled="false" />
+            </LinearLayout>
+            <!--Line phân cách-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D8D5E0"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+            <!--Phương thức vận chuyển-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/shipping_method"
+                android:textColor="@color/black_color"
+                style="@style/Text_SubContent"
+                android:textStyle="bold"
+                android:paddingStart="8dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/time_box"
+                android:padding="10dp"
+                android:layout_marginHorizontal="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/spx_express"
+                        style="@style/Text_SubContent"
+                        android:textColor="@color/black_color"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_marginEnd="8dp"
+                        android:id="@+id/tvDeliveryCostBefore"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shipping_fee_35000"
+                        style="@style/Text_SubContent"
+                        android:textColor="@color/d_grey_color"
+                        android:layout_weight="1"
+                        android:gravity="end"/>
+                    <TextView
+                        android:layout_marginEnd="8dp"
+                        android:id="@+id/tvDeliveryCostAfter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/free_shipping"
+                        style="@style/Text_SubContent"
+                        android:textColor="@color/error_color"
+                        android:layout_marginStart="8dp"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delivery_guarantee_period"
+                    style="@style/Text_SubContent"
+                    android:textColor="@color/black_color"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/voucher_offer_details"
+                    android:fontFamily="@font/nunito_regular"
+                    android:textColor="@color/black_color"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+            <!--Line phân cách-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D8D5E0"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginStart="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_price_one_product"
+                    style="@style/Text_SubContent"
+                    android:textColor="@color/black_color"
+                    android:gravity="end"/>
+                <TextView
+                    android:layout_marginEnd="8dp"
+                    android:id="@+id/tvFirstProductPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_305000_vnd"
+                    style="@style/Text_SubContent"
+                    android:textColor="@color/primary_color"
+                    android:gravity="end"
+                    android:textStyle="bold"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <!--Chọn khuyến mãi-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@drawable/group_radius"
+                android:layout_marginTop="10dp">
+
+                <!-- Tiêu đề -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_a_promotion"
+                    style="@style/Text_SubContent"
+                    android:textColor="@color/black_color"/>
+
+                <!-- Line phân cách -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E0E0E0"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+            </LinearLayout>
+            <!--Chọn phương thức thanh toán-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/group_radius"
+                android:padding="10dp"
+                android:layout_marginTop="10dp">
+
+                <!-- Tiêu đề và Xem tất cả -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/payment_method_label"
+                        android:textStyle="bold"
+                        style="@style/Text_SubContent"
+                        android:textColor="@color/black_color"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/view_all"
+                        style="@style/Text_SubContent"
+                        android:textColor="@color/d_grey_color"
+                        android:gravity="end"/>
+                    <ImageView
+                        android:id="@+id/btnallPTTT"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/right"
+                        android:layout_marginStart="5dp"/>
+                </LinearLayout>
+
+                <!-- Line phân cách -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E0E0E0"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <!-- VNPAY-QR -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:background="@drawable/group_radius"
-                    android:padding="10dp">
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="10dp">
+
                     <ImageView
                         android:layout_width="24dp"
                         android:layout_height="24dp"
-                        android:src="@drawable/location"
-                        android:layout_marginEnd="10dp"/>
+                        android:src="@drawable/qrcode"
+                        android:layout_marginEnd="12dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vnpay_qr"
+                        style="@style/Text_SubContent"
+                        android:textColor="@color/black_color"/>
+                </LinearLayout>
+
+                <!-- Line phân cách -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E0E0E0"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <!-- Thẻ ATM/Thẻ tín dụng/Thẻ ghi nợ -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="10dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/creditcard"
+                        android:layout_marginEnd="12dp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/atm_credit_debit_card"
+                        style="@style/Text_SubContent"
+                        android:textColor="@color/black_color"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/down_2"
+                        android:layout_marginEnd="12dp"
+                        android:layout_gravity="center_vertical"/>
+                </LinearLayout>
+
+                <!-- Line phân cách -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E0E0E0"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <!-- Tài khoản ngân hàng liên kết -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/bank"
+                        android:layout_marginEnd="12dp"/>
+
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:layout_weight="1">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:gravity="start">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/user_name"
-                                style="@style/Text_Content"
-                                android:textColor="@color/black_color"/>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/phone_number"
-                                style="@style/Text_SubContent"
-                                android:textColor="@color/grey_color"
-                                android:layout_marginStart="10dp"/>
-                        </LinearLayout>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/Nhon_Thuan"
+                            android:text="@string/linked_bank_account"
                             style="@style/Text_SubContent"
-                            android:textColor="@color/grey_color"
-                            android:layout_marginTop="3dp"/>
+                            android:textColor="@color/black_color"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/nhon_thanh_anh_nhon_binh_dinh_address"
+                            android:text="@string/tp_bank"
                             style="@style/Text_SubContent"
                             android:textColor="@color/grey_color"/>
                     </LinearLayout>
+
                     <ImageView
-                        android:id="@+id/btnChangeAdress"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
-                        android:src="@drawable/right"
+                        android:src="@drawable/down_2"
+                        android:layout_marginEnd="12dp"
                         android:layout_gravity="center_vertical"/>
-                </LinearLayout>
-
-                <!--Thông tin sản phẩm-->
-                <LinearLayout
-                    android:id="@+id/item_shipping"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="10dp"
-                    android:layout_gravity="center_horizontal"
-                    android:background="@drawable/group_radius"
-                    android:layout_marginTop="10dp">
-
-                    <!-- Hàng sản phẩm -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:id="@+id/imgProduct"
-                            android:layout_width="57dp"
-                            android:layout_height="57dp"
-                            android:src="@drawable/imv"
-                            android:scaleType="fitXY"
-                            android:layout_marginEnd="16dp"/>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:id="@+id/tvProductName"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="@string/product_code_innowave_wlhp_0103"
-                                style="@style/Text_Content"
-                                android:textColor="@color/black_color"/>
-                            <TextView
-                                android:id="@+id/tvColor"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Đen"
-                                style="@style/Text_SubContent"
-                                android:textColor="@color/grey_color"/>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal"
-                                android:layout_gravity="center">
-                                <TextView
-                                    android:id="@+id/tvNewPrice"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/price_305000_vnd_alt"
-                                    android:textColor="@color/error_color"
-                                    style="@style/Text_Content"
-                                    android:textStyle="bold"/>
-                                <TextView
-                                    android:id="@+id/tvOldPrice"
-                                    android:layout_width="0dp"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/price_305000_vnd"
-                                    style="@style/Text_SubContent"
-                                    android:textColor="@color/grey_color"
-                                    android:layout_weight="1"
-                                    android:layout_marginStart="3dp"/>
-                                <TextView
-                                    android:id="@+id/tvQuantity"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/quantity_x1"
-                                    style="@style/Text_SubContent"
-                                    android:textColor="@color/d_grey_color"
-                                    android:gravity="end"/>
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <!--Line phân cách-->
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="#D8D5E0"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginBottom="8dp"/>
-
-                    <!-- Lời nhắn -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:id="@+id/txtTotal"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/message_to_innowave"
-                            style="@style/Text_SubContent"
-                            android:textColor="@color/black_color"
-                            />
-                        <TextView
-                            android:id="@+id/priceTotal"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/leave_message"
-                            style="@style/Text_SubContent"
-                            android:textColor="@color/grey_color"
-                            android:gravity="end"/>
-                        <ImageView
-                            android:id="@+id/btnLoinhan"
-                            android:layout_width="16dp"
-                            android:layout_height="16dp"
-                            android:src="@drawable/right"
-                            />
-                    </LinearLayout>
-
-                    <!--Line phân cách-->
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="#D8D5E0"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginBottom="8dp"/>
-
-                    <!--Phương thức vận chuyển-->
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/shipping_method"
-                        android:textColor="@color/black_color"
-                        style="@style/Text_SubContent"
-                        android:textStyle="bold"/>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:background="@drawable/time_box"
-                        android:layout_marginTop="5dp"
-                        android:padding="10dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/spx_express"
-                                style="@style/Text_SubContent"
-                                android:textColor="@color/black_color"
-                                android:textStyle="bold"/>
-                            <TextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/shipping_fee_21000_vnd"
-                                style="@style/Text_SubContent"
-                                android:textColor="@color/d_grey_color"
-                                android:layout_weight="1"
-                                android:gravity="end"/>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/free_shipping"
-                                style="@style/Text_SubContent"
-                                android:textColor="@color/error_color"
-                                android:layout_marginStart="8dp"/>
-                        </LinearLayout>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/delivery_guarantee_period"
-                            style="@style/Text_SubContent"
-                            android:textColor="@color/black_color"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/voucher_offer_details"
-                            android:fontFamily="@font/nunito_regular"
-                            android:textColor="@color/black_color"
-                            android:textSize="12sp"/>
-                    </LinearLayout>
-
-                    <!--Line phân cách-->
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="#D8D5E0"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginBottom="8dp"/>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/total_price_one_product"
-                            style="@style/Text_SubContent"
-                            android:textColor="@color/black_color"
-                            android:gravity="end"/>
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:text="@string/price_305000_vnd"
-                            style="@style/Text_SubContent"
-                            android:textColor="@color/primary_color"
-                            android:gravity="end"
-                            android:textStyle="bold"
-                            android:layout_weight="1"/>
-                    </LinearLayout>
-                </LinearLayout>
-
-                <!--Chọn khuyến mãi-->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="10dp"
-                    android:background="@drawable/group_radius"
-                    android:layout_marginTop="10dp">
-
-                    <!-- Tiêu đề -->
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/select_a_promotion"
-                        style="@style/Text_SubContent"
-                        android:textColor="@color/black_color"/>
-
-                    <!-- Line phân cách -->
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="#E0E0E0"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginBottom="8dp"/>
-
-                    <!-- Khung khuyến mãi -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:background="@drawable/time_box"
-                        android:padding="12dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:gravity="center_vertical">
-
-                            <!-- Icon quà tặng -->
-                            <ImageView
-                                android:layout_width="52dp"
-                                android:layout_height="52dp"
-                                android:src="@drawable/gift2"
-                                android:layout_marginEnd="12dp"/>
-
-                            <!-- Nội dung khuyến mãi -->
-                            <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/discount_100000_on_product"
-                                    style="@style/Text_Content"
-                                    android:textColor="@color/black_color"/>
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/coupon_detail"
-                                    style="@style/Text_SubContent"
-                                    android:textColor="@color/grey_color"/>
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <!-- Nút Bỏ chọn -->
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/not_selected"
-                            android:textColor="@color/primary_color"
-                            style="@style/Text_SubContent"
-                            android:gravity="end"/>
-                    </LinearLayout>
-
 
                 </LinearLayout>
 
-                <!--Chọn phương thức thanh toán-->
+                <!-- Line phân cách -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E0E0E0"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <!-- Thanh toán khi nhận hàng -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@drawable/group_radius"
-                    android:padding="10dp"
-                    android:layout_marginTop="10dp">
-
-                    <!-- Tiêu đề và Xem tất cả -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/payment_method_label"
-                            android:textStyle="bold"
-                            style="@style/Text_SubContent"
-                            android:textColor="@color/black_color"/>
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/view_all"
-                            style="@style/Text_SubContent"
-                            android:textColor="@color/d_grey_color"
-                            android:gravity="end"/>
-                        <ImageView
-                            android:id="@+id/btnallPTTT"
-                            android:layout_width="16dp"
-                            android:layout_height="16dp"
-                            android:src="@drawable/right"
-                            android:layout_marginStart="5dp"/>
-                    </LinearLayout>
-
-                    <!-- Line phân cách -->
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="#E0E0E0"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"/>
-
-                    <!-- VNPAY-QR -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center_vertical"
-                        android:layout_marginStart="10dp">
-
-                        <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:src="@drawable/qrcode"
-                            android:layout_marginEnd="12dp"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/vnpay_qr"
-                            style="@style/Text_SubContent"
-                            android:textColor="@color/black_color"/>
-                    </LinearLayout>
-
-                    <!-- Line phân cách -->
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="#E0E0E0"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"/>
-
-                    <!-- Thẻ ATM/Thẻ tín dụng/Thẻ ghi nợ -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center_vertical"
-                        android:layout_marginStart="10dp">
-
-                        <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:src="@drawable/creditcard"
-                            android:layout_marginEnd="12dp"/>
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:text="@string/atm_credit_debit_card"
-                            style="@style/Text_SubContent"
-                            android:textColor="@color/black_color"
-                            android:layout_weight="1"/>
-
-                        <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:src="@drawable/down_2"
-                            android:layout_marginEnd="12dp"
-                            android:layout_gravity="center_vertical"/>
-                    </LinearLayout>
-
-                    <!-- Line phân cách -->
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="#E0E0E0"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"/>
-
-                    <!-- Tài khoản ngân hàng liên kết -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginStart="10dp">
-
-                        <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:src="@drawable/bank"
-                            android:layout_marginEnd="12dp"/>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_weight="1">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/linked_bank_account"
-                                style="@style/Text_SubContent"
-                                android:textColor="@color/black_color"/>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/tp_bank"
-                                style="@style/Text_SubContent"
-                                android:textColor="@color/grey_color"/>
-                        </LinearLayout>
-
-                        <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:src="@drawable/down_2"
-                            android:layout_marginEnd="12dp"
-                            android:layout_gravity="center_vertical"/>
-
-                    </LinearLayout>
-
-                    <!-- Line phân cách -->
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="#E0E0E0"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"/>
-
-                    <!-- Thanh toán khi nhận hàng -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center_vertical"
-                        android:layout_marginStart="10dp">
-                        <ImageView
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
-                            android:src="@drawable/cash"
-                            android:layout_marginEnd="12dp"/>
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:text="@string/cash_on_delivery"
-                            style="@style/Text_SubContent"
-                            android:textColor="@color/primary_color"
-                            android:layout_weight="1"/>
-                        <ImageView
-                            android:layout_width="16dp"
-                            android:layout_height="16dp"
-                            android:src="@drawable/frame"
-                            android:layout_marginEnd="12dp"/>
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <!--Chi tiết thanh toán-->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@drawable/group_radius"
-                    android:padding="10dp"
-                    android:layout_marginTop="10dp">
-
-                    <!-- Tiêu đề -->
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="10dp">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/cash"
+                        android:layout_marginEnd="12dp"/>
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="@string/payment_details"
-                        android:textStyle="bold"
+                        android:text="@string/cash_on_delivery"
                         style="@style/Text_SubContent"
-                        android:textColor="@color/black_color"/>
-
-                    <!-- Dòng: Tổng tiền hàng -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginTop="5dp">
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/total_payment"
-                            android:textColor="@color/d_grey_color"
-                            style="@style/Text_SubContent"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/price_500000_vnd"
-                            android:textColor="@color/d_grey_color"
-                            style="@style/Text_SubContent"/>
-                    </LinearLayout>
-
-                    <!-- Dòng: Tổng tiền phí vận chuyển -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginTop="5dp">
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/shipping_fee_total"
-                            android:textColor="@color/d_grey_color"
-                            style="@style/Text_SubContent"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/shipping_fee_21000_vnd"
-                            android:textColor="@color/d_grey_color"
-                            style="@style/Text_SubContent"/>
-                    </LinearLayout>
-
-                    <!-- Dòng: Giảm giá phí vận chuyển -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginTop="5dp">
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/shipping_fee_discount"
-                            android:textColor="@color/d_grey_color"
-                            style="@style/Text_SubContent"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/discount_shipping_fee_21000"
-                            android:textColor="@color/error_color"
-                            style="@style/Text_SubContent"/>
-                    </LinearLayout>
-
-                    <!-- Dòng: Tổng cộng Voucher giảm giá -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginTop="5dp">
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/total_voucher_discount"
-                            android:textColor="@color/d_grey_color"
-                            style="@style/Text_SubContent"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/discount_voucher_216000"
-                            android:textColor="@color/error_color"
-                            style="@style/Text_SubContent"/>
-                    </LinearLayout>
-
-                    <!-- Line phân cách -->
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="#F0F0F0"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"/>
-
-                    <!-- Dòng: Tổng thanh toán -->
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/total_payment"
-                            android:textColor="@color/d_grey_color"
-                            style="@style/Text_SubContent"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/price_305000_vnd_alt"
-                            android:textStyle="bold"
-                            android:textColor="@color/d_grey_color"
-                            style="@style/Text_SubContent"/>
-                    </LinearLayout>
-
-                    <!-- Dòng: Đã bao gồm thuế -->
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/tax_included"
-                        android:textColor="@color/d_grey_color"
-                        style="@style/Text_SubContent"
-                        android:gravity="end"
-                        android:layout_marginTop="2dp"/>
+                        android:textColor="@color/primary_color"
+                        android:layout_weight="1"/>
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/frame"
+                        android:layout_marginEnd="12dp"/>
                 </LinearLayout>
 
             </LinearLayout>
-            <!--Text kề cuối-->
+            <!--Chi tiết thanh toán-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginStart="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/group_radius"
                 android:padding="10dp"
-                android:gravity="center_vertical">
+                android:layout_marginTop="10dp">
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/check_square"/>
-
+                <!-- Tiêu đề -->
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/agree_with"
-                    android:textColor="@color/black_color"
+                    android:text="@string/payment_details"
+                    android:textStyle="bold"
                     style="@style/Text_SubContent"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="3dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
+                    android:textColor="@color/black_color"/>
+
+                <!-- Dòng: Tổng tiền hàng -->
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/innowave_terms"
-                    android:textColor="@color/primary_color"
-                    style="@style/Text_SubContent"/>
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/total_payment"
+                        android:textColor="@color/d_grey_color"
+                        style="@style/Text_SubContent"/>
+
+                    <TextView
+                        android:id="@+id/tvProductPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/price_500000_vnd"
+                        android:textColor="@color/d_grey_color"
+                        style="@style/Text_SubContent"/>
+                </LinearLayout>
+
+                <!-- Dòng: Tổng tiền phí vận chuyển -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/shipping_fee_total"
+                        android:textColor="@color/d_grey_color"
+                        style="@style/Text_SubContent"/>
+
+                    <TextView
+                        android:id="@+id/tvShippingFee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shipping_fee_35000"
+                        android:textColor="@color/d_grey_color"
+                        style="@style/Text_SubContent"/>
+                </LinearLayout>
+
+                <!-- Dòng: Giảm giá phí vận chuyển -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/discounted_shipping_fee"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/shipping_fee_discount"
+                        android:textColor="@color/d_grey_color"
+                        style="@style/Text_SubContent"/>
+
+                    <TextView
+                        android:id="@+id/tvDiscountedShippingFee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/discount_shipping_fee_21000"
+                        android:textColor="@color/error_color"
+                        style="@style/Text_SubContent"/>
+                </LinearLayout>
+
+                <!-- Dòng: Tổng cộng Voucher giảm giá -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/total_voucher_discount"
+                        android:textColor="@color/d_grey_color"
+                        style="@style/Text_SubContent"/>
+
+                    <TextView
+                        android:id="@+id/tvVoucherDiscountAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/discount_voucher_216000"
+                        android:textColor="@color/error_color"
+                        style="@style/Text_SubContent"/>
+                </LinearLayout>
+
+                <!-- Line phân cách -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#F0F0F0"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <!-- Dòng: Tổng thanh toán -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/total_payment"
+                        android:textColor="@color/d_grey_color"
+                        style="@style/Text_SubContent"/>
+
+                    <TextView
+                        android:id="@+id/tvEndPrice1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/price_305000_vnd_alt"
+                        android:textStyle="bold"
+                        android:textColor="@color/d_grey_color"
+                        style="@style/Text_SubContent"/>
+                </LinearLayout>
+
+                <!-- Dòng: Đã bao gồm thuế -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tax_included"
+                    android:textColor="@color/d_grey_color"
+                    style="@style/Text_SubContent"
+                    android:gravity="end"
+                    android:layout_marginTop="2dp"/>
             </LinearLayout>
-
         </LinearLayout>
-
     </ScrollView>
+
 
     <!--Nội dung phía dưới-->
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="#FFFFFF"
-        android:padding="10dp"
-        android:gravity="center_vertical">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#FFFFFF"
+    android:padding="10dp"
+    android:gravity="center_vertical">
 
-        <!-- Cột trái: Tổng cộng và tiết kiệm -->
+    <!-- Cột trái: Tổng cộng và tiết kiệm -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical"
             android:gravity="end">
-
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -832,38 +662,40 @@
                     android:layout_marginEnd="5dp"/>
 
                 <TextView
+                    android:id="@+id/tvEndPrice2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/price_305000_vnd_alt"
                     android:textColor="#E53835"
                     android:textStyle="bold"
                     android:textSize="18sp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/savings"
-                    android:textColor="@color/d_grey_color"
-                    style="@style/Text_SubContent"
-                    android:layout_marginEnd="5dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/discount_voucher_216000"
-                    android:textColor="@color/error_color"
-                    style="@style/Text_Content"/>
-            </LinearLayout>
-
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/savings"
+                android:textColor="@color/d_grey_color"
+                style="@style/Text_SubContent"
+                android:layout_marginEnd="5dp"/>
+
+            <TextView
+                android:id="@+id/tvSavingAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/discount_voucher_216000"
+                android:textColor="@color/error_color"
+                style="@style/Text_Content"/>
+        </LinearLayout>
+
+
+</LinearLayout>
         <!-- Nút Đặt hàng -->
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnOrder"
@@ -877,6 +709,4 @@
             android:textAllCaps="false"
             android:layout_marginStart="15dp"/>
     </LinearLayout>
-
 </LinearLayout>
-

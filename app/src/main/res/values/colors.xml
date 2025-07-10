@@ -29,4 +29,11 @@
     <color name="warning_color">#FBC02D</color>
     <color name="error_color">#E53835</color>
     <color name="success_color">#2E7D31</color>
+
+    <!-- New Colors -->
+    <color name="chip_default">#FFF0F0F0</color>
+    <color name="text_default">#FF000000</color>
+    <color name="chip_stroke">#D1CFE0</color>
+    <color name="chip_text">#B0AEB8</color>
+    <color name="chip_bg">#FFFFFFFF</color>
 </resources>

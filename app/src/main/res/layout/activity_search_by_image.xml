@@ -7,7 +7,7 @@
     tools:context=".SearchByImageActivity">
 
     <!-- Camera preview sẽ hiển thị ở đây -->
-    <FrameLayout
+    <androidx.camera.view.PreviewView
         android:id="@+id/camera_preview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -82,7 +82,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="80dp"
-        android:src="@drawable/ic_camera"
+        android:src="@drawable/ic_take_picture"
         android:background="#D0D4D0"
         android:scaleType="centerInside"/>
 

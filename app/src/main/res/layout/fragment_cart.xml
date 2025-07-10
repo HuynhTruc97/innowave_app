@@ -61,14 +61,13 @@
             android:orientation="vertical"
             android:visibility="visible">
 
-            <ListView
-                android:id="@+id/lvCartProducts"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCartProducts"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:divider="@android:color/transparent"
-                android:dividerHeight="8dp"
-                android:padding="8dp"/>
+                android:padding="8dp"
+                android:clipToPadding="false"/>
 
             <!-- View nhập mã giảm giá -->
             <LinearLayout
@@ -87,7 +86,10 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_gift"
-                    android:layout_marginEnd="8dp"/>
+                    android:layout_marginEnd="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"/>
 
                 <TextView
                     android:id="@+id/tvEnterCoupon"
@@ -102,7 +104,10 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_left_arrow"
-                    android:scaleX="-1"/>
+                    android:scaleX="-1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"/>
             </LinearLayout>
 
             <!-- View tổng tiền và nút tiếp tục -->
@@ -140,12 +145,15 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:src="@drawable/ic_arrow_up"
-                        android:layout_marginStart="8dp"/>
+                        android:layout_marginStart="8dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"/>
                 </LinearLayout>
 
                 <!-- Nút Tiếp tục -->
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btnCheckout"
+                    android:id="@+id/btnContinue"
                     android:layout_width="158dp"
                     android:layout_height="48dp"
                     android:text="@string/cont"

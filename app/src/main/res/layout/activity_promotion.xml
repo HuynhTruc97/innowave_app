@@ -75,7 +75,7 @@
                     android:layout_height="20dp"
                     android:layout_marginStart="4dp"
                     android:contentDescription="Camera"
-                    android:src="@drawable/ic_camera" />
+                    android:src="@drawable/ic_take_picture" />
             </LinearLayout>
 
             <ImageView
