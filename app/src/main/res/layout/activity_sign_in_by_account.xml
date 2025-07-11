@@ -101,7 +101,7 @@
             android:layout_marginTop="2dp"
             android:visibility="gone"/>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnDangNhap"
             android:layout_width="match_parent"
             android:layout_height="56dp"
@@ -178,7 +178,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/dont_have_account"
-                android:textColor="@color/l_grey_color" />
+                android:textColor="@color/grey_color" />
 
             <TextView
                 android:id="@+id/btnRegister"

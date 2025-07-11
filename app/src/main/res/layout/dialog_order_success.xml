@@ -5,10 +5,9 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:background="@drawable/bg_dialog_rounded_with_shadow"
-    android:padding="32dp"
+    android:paddingTop="32dp"
+    android:paddingBottom="32dp"
     android:gravity="center_horizontal">
-
-
 
     <TextView
         android:id="@+id/tvOrderSuccess"
@@ -27,7 +26,7 @@
         android:orientation="horizontal"
         android:gravity="center">
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnBackHome"
             style="@style/Text_Button_M"
             android:layout_width="0dp"
@@ -36,16 +35,18 @@
             android:layout_weight="1"
             android:background="@drawable/btn_outline"
             android:text="@string/back_home"
-            android:textSize="13sp" />
+            android:textAllCaps="false"
+            android:textColor="@color/primary_color"/>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnViewOrder"
             android:layout_width="0dp"
             android:layout_height="48dp"
             android:layout_weight="1"
             android:text="@string/view_order"
-            style="@style/Text_Button_L"
+            style="@style/Text_Button_M"
             android:background="@drawable/bg_solid_button"
-            android:textSize="13sp"/>
+            android:textColor="@color/white_color"
+            android:textAllCaps="false"/>
     </LinearLayout>
 </LinearLayout>

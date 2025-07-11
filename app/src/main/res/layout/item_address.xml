@@ -4,7 +4,8 @@
     android:layout_height="wrap_content"
     android:background="@android:color/white"
     android:padding="12dp"
-    android:id="@+id/rvAddressList">
+    android:id="@+id/rvAddressList"
+    android:layout_marginBottom="10dp">
 
     <!-- Nút Sửa -->
     <Button

@@ -140,7 +140,7 @@
             android:gravity="right"
             android:orientation="horizontal">
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnCancel"
                 style="@style/Text_Button_M"
                 android:layout_width="wrap_content"
@@ -148,7 +148,8 @@
                 android:background="@drawable/btn_action"
                 android:enabled="true"
                 android:text="@string/cancel"
-                android:textAllCaps="false" />
+                android:textAllCaps="false"
+                android:textColor="@color/white_color"/>
 
         </LinearLayout>
 

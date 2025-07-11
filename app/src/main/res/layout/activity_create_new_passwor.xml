@@ -36,6 +36,7 @@
         android:text="@string/create_new_password"
         android:textColor="@color/primary_color"
         style="@style/Text_Title"
+        android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/logo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

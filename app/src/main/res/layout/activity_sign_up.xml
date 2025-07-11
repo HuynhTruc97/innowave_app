@@ -46,6 +46,7 @@
                 android:text="@string/sign_up2"
                 android:textColor="@color/primary_color"
                 style="@style/Text_Title"
+                android:textStyle="bold"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="32dp"/>
 
@@ -240,7 +241,7 @@
             </LinearLayout>
 
             <!-- Nút đăng ký -->
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnRegister"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
